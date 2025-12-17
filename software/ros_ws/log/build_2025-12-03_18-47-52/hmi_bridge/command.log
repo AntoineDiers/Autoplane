@@ -1,0 +1,2 @@
+Invoking command in '/workspace/build/hmi_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/build/hmi_bridge -- -j20 -l20
+Invoked command in '/workspace/build/hmi_bridge' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/build/hmi_bridge -- -j20 -l20

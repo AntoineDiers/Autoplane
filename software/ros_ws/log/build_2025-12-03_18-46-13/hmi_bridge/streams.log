@@ -1,0 +1,48 @@
+[0.011s] Invoking command in '/workspace/build/hmi_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/src/hmi_bridge -DCMAKE_INSTALL_PREFIX=/workspace/install/hmi_bridge
+[0.101s] -- The C compiler identification is GNU 13.3.0
+[0.150s] -- The CXX compiler identification is GNU 13.3.0
+[0.163s] -- Detecting C compiler ABI info
+[0.265s] -- Detecting C compiler ABI info - done
+[0.276s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.276s] -- Detecting C compile features
+[0.277s] -- Detecting C compile features - done
+[0.289s] -- Detecting CXX compiler ABI info
+[0.398s] -- Detecting CXX compiler ABI info - done
+[0.404s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.404s] -- Detecting CXX compile features
+[0.404s] -- Detecting CXX compile features - done
+[0.406s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.515s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.603s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.640s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.647s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.657s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.668s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.719s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.721s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.798s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.822s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.838s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.937s] -- Configuring done (0.9s)
+[0.943s] -- Generating done (0.0s)
+[0.945s] -- Build files have been written to: /workspace/build/hmi_bridge
+[0.950s] Invoked command in '/workspace/build/hmi_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/src/hmi_bridge -DCMAKE_INSTALL_PREFIX=/workspace/install/hmi_bridge
+[0.951s] Invoking command in '/workspace/build/hmi_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/build/hmi_bridge -- -j20 -l20
+[1.005s] [ 33%] Building CXX object CMakeFiles/hmi_bridge.dir/src/Bridge.cpp.o
+[1.006s] [ 66%] Building CXX object CMakeFiles/hmi_bridge.dir/src/main.cpp.o
+[1.017s] In file included from /workspace/src/hmi_bridge/src/main.cpp:1:
+[1.017s] /workspace/src/hmi_bridge/src/Bridge.h:3:10: fatal error: nlohmann/json.hpp: No such file or directory
+[1.018s]     3 | #include <nlohmann/json.hpp>
+[1.018s]       |          ^~~~~~~~~~~~~~~~~~~
+[1.018s] compilation terminated.
+[1.018s] In file included from /workspace/src/hmi_bridge/src/Bridge.cpp:1:
+[1.019s] /workspace/src/hmi_bridge/src/Bridge.h:3:10: fatal error: nlohmann/json.hpp: No such file or directory
+[1.019s]     3 | #include <nlohmann/json.hpp>
+[1.019s]       |          ^~~~~~~~~~~~~~~~~~~
+[1.019s] compilation terminated.
+[1.019s] gmake[2]: *** [CMakeFiles/hmi_bridge.dir/build.make:90: CMakeFiles/hmi_bridge.dir/src/main.cpp.o] Error 1
+[1.019s] gmake[2]: *** Waiting for unfinished jobs....
+[1.019s] gmake[2]: *** [CMakeFiles/hmi_bridge.dir/build.make:76: CMakeFiles/hmi_bridge.dir/src/Bridge.cpp.o] Error 1
+[1.019s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hmi_bridge.dir/all] Error 2
+[1.019s] gmake: *** [Makefile:146: all] Error 2
+[1.021s] Invoked command in '/workspace/build/hmi_bridge' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/build/hmi_bridge -- -j20 -l20

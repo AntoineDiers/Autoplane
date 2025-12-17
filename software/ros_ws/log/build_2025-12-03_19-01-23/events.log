@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000100] (bringup) JobQueued: {'identifier': 'bringup', 'dependencies': OrderedDict()}
+[0.000266] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000284] (hmi_bridge) JobQueued: {'identifier': 'hmi_bridge', 'dependencies': OrderedDict()}
+[0.000291] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000298] (bringup) JobStarted: {'identifier': 'bringup'}
+[0.003256] (controller) JobStarted: {'identifier': 'controller'}
+[0.004923] (hmi_bridge) JobStarted: {'identifier': 'hmi_bridge'}
+[0.006484] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.008675] (bringup) JobProgress: {'identifier': 'bringup', 'progress': 'cmake'}
+[0.008923] (bringup) JobProgress: {'identifier': 'bringup', 'progress': 'build'}
+[0.009264] (bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/bringup', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/bringup', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/bringup', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.009816] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.009961] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[0.010091] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/controller', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.010483] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'cmake'}
+[0.010728] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'build'}
+[0.010851] (hmi_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/hmi_bridge', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/hmi_bridge', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/hmi_bridge', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.011773] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'cmake'}
+[0.011977] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'build'}
+[0.012134] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/simulator', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.036446] (bringup) CommandEnded: {'returncode': 0}
+[0.036866] (bringup) JobProgress: {'identifier': 'bringup', 'progress': 'install'}
+[0.044631] (bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/bringup'], 'cwd': '/workspace/ros_ws/build/bringup', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/bringup', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.045565] (simulator) CommandEnded: {'returncode': 0}
+[0.045959] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'install'}
+[0.046157] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/simulator'], 'cwd': '/workspace/ros_ws/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.049382] (hmi_bridge) StdoutLine: {'line': b'[100%] Built target hmi_bridge\n'}
+[0.052512] (simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.052756] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator//launch\n'}
+[0.052921] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator//launch/launch.xml\n'}
+[0.053048] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator//launch/gz_bridge_config.yaml\n'}
+[0.053178] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator//gazebo\n'}
+[0.053278] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator//gazebo/plane.xml\n'}
+[0.053350] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/ament_index/resource_index/package_run_dependencies/simulator\n'}
+[0.053473] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/ament_index/resource_index/parent_prefix_path/simulator\n'}
+[0.053581] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/environment/ament_prefix_path.sh\n'}
+[0.053921] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/environment/ament_prefix_path.dsv\n'}
+[0.054049] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/environment/path.sh\n'}
+[0.054327] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/environment/path.dsv\n'}
+[0.054555] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/local_setup.bash\n'}
+[0.054675] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/local_setup.sh\n'}
+[0.054791] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/local_setup.zsh\n'}
+[0.054926] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/local_setup.dsv\n'}
+[0.055141] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/package.dsv\n'}
+[0.055368] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/ament_index/resource_index/packages/simulator\n'}
+[0.055663] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/cmake/simulatorConfig.cmake\n'}
+[0.055880] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/cmake/simulatorConfig-version.cmake\n'}
+[0.056085] (bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.056334] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/simulator/share/simulator/package.xml\n'}
+[0.056669] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup//launch\n'}
+[0.056890] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup//launch/launch.xml\n'}
+[0.057024] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/ament_index/resource_index/package_run_dependencies/bringup\n'}
+[0.057132] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/ament_index/resource_index/parent_prefix_path/bringup\n'}
+[0.057255] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/environment/ament_prefix_path.sh\n'}
+[0.057348] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/environment/ament_prefix_path.dsv\n'}
+[0.057420] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/environment/path.sh\n'}
+[0.057526] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/environment/path.dsv\n'}
+[0.057594] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/local_setup.bash\n'}
+[0.057628] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/local_setup.sh\n'}
+[0.057660] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/local_setup.zsh\n'}
+[0.057691] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/local_setup.dsv\n'}
+[0.057721] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/package.dsv\n'}
+[0.057750] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/ament_index/resource_index/packages/bringup\n'}
+[0.057780] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/cmake/bringupConfig.cmake\n'}
+[0.057809] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/cmake/bringupConfig-version.cmake\n'}
+[0.057839] (bringup) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/bringup/share/bringup/package.xml\n'}
+[0.057869] (simulator) CommandEnded: {'returncode': 0}
+[0.065303] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 0}
+[0.065937] (controller) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[0.066339] (bringup) CommandEnded: {'returncode': 0}
+[0.072355] (bringup) JobEnded: {'identifier': 'bringup', 'rc': 0}
+[0.072682] (hmi_bridge) CommandEnded: {'returncode': 0}
+[0.072804] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'install'}
+[0.072946] (hmi_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/hmi_bridge'], 'cwd': '/workspace/ros_ws/build/hmi_bridge', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/hmi_bridge', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.073650] (controller) CommandEnded: {'returncode': 0}
+[0.073820] (controller) JobProgress: {'identifier': 'controller', 'progress': 'install'}
+[0.073967] (controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/controller'], 'cwd': '/workspace/ros_ws/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '77f53631f2a4', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.077676] (hmi_bridge) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.077803] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/lib/hmi_bridge/hmi_bridge\n'}
+[0.077878] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge//launch\n'}
+[0.077913] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge//launch/launch.xml\n'}
+[0.077946] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/package_run_dependencies/hmi_bridge\n'}
+[0.078005] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/parent_prefix_path/hmi_bridge\n'}
+[0.078039] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.sh\n'}
+[0.078069] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.dsv\n'}
+[0.078100] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.sh\n'}
+[0.078132] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.dsv\n'}
+[0.078197] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.bash\n'}
+[0.078230] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.sh\n'}
+[0.078282] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.zsh\n'}
+[0.078324] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.dsv\n'}
+[0.078355] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.dsv\n'}
+[0.078399] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/packages/hmi_bridge\n'}
+[0.078429] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig.cmake\n'}
+[0.078457] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig-version.cmake\n'}
+[0.078484] (hmi_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.xml\n'}
+[0.078800] (controller) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.079017] (hmi_bridge) CommandEnded: {'returncode': 0}
+[0.085104] (hmi_bridge) JobEnded: {'identifier': 'hmi_bridge', 'rc': 0}
+[0.085453] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/lib/controller/controller\n'}
+[0.085686] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller//launch\n'}
+[0.085723] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller//launch/launch.xml\n'}
+[0.085757] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/ament_index/resource_index/package_run_dependencies/controller\n'}
+[0.085877] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/ament_index/resource_index/parent_prefix_path/controller\n'}
+[0.085911] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.sh\n'}
+[0.085942] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.dsv\n'}
+[0.085973] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/path.sh\n'}
+[0.086006] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/path.dsv\n'}
+[0.086036] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.bash\n'}
+[0.086066] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.sh\n'}
+[0.086095] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.zsh\n'}
+[0.086179] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.dsv\n'}
+[0.086213] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/package.dsv\n'}
+[0.086245] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/ament_index/resource_index/packages/controller\n'}
+[0.086276] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig.cmake\n'}
+[0.086312] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig-version.cmake\n'}
+[0.086352] (controller) StdoutLine: {'line': b'-- Up-to-date: /workspace/ros_ws/install/controller/share/controller/package.xml\n'}
+[0.086383] (controller) CommandEnded: {'returncode': 0}
+[0.091913] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[0.092211] (-) EventReactorShutdown: {}

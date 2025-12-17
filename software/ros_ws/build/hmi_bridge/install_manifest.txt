@@ -1,0 +1,17 @@
+/workspace/ros_ws/install/hmi_bridge/lib/hmi_bridge/hmi_bridge
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge//launch/launch.xml
+/workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/package_run_dependencies/hmi_bridge
+/workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/parent_prefix_path/hmi_bridge
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.sh
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.dsv
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.sh
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.dsv
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.bash
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.sh
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.zsh
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.dsv
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.dsv
+/workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/packages/hmi_bridge
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig.cmake
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig-version.cmake
+/workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.xml

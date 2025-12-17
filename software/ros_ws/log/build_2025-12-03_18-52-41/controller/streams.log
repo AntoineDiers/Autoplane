@@ -1,0 +1,62 @@
+[0.008s] Invoking command in '/workspace/ros_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/ros_ws/src/controller -DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/controller
+[0.086s] -- The C compiler identification is GNU 13.3.0
+[0.134s] -- The CXX compiler identification is GNU 13.3.0
+[0.147s] -- Detecting C compiler ABI info
+[0.213s] -- Detecting C compiler ABI info - done
+[0.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.219s] -- Detecting C compile features
+[0.219s] -- Detecting C compile features - done
+[0.226s] -- Detecting CXX compiler ABI info
+[0.297s] -- Detecting CXX compiler ABI info - done
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.303s] -- Detecting CXX compile features
+[0.303s] -- Detecting CXX compile features - done
+[0.305s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.399s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.488s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.522s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.533s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.549s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.565s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.633s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.635s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.724s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.746s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.769s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.822s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.847s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.864s] -- Found tf2_geometry_msgs: 0.36.16 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.875s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.876s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.876s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.047s] -- Configuring done (1.0s)
+[1.058s] -- Generating done (0.0s)
+[1.062s] -- Build files have been written to: /workspace/ros_ws/build/controller
+[1.069s] Invoked command in '/workspace/ros_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/ros_ws/src/controller -DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/controller
+[1.069s] Invoking command in '/workspace/ros_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/controller -- -j20 -l20
+[1.114s] [ 50%] Building CXX object CMakeFiles/controller.dir/src/main.cpp.o
+[12.062s] [100%] Linking CXX executable controller
+[12.191s] [100%] Built target controller
+[12.201s] Invoked command in '/workspace/ros_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/controller -- -j20 -l20
+[12.202s] Invoking command in '/workspace/ros_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ros_ws/build/controller
+[12.208s] -- Install configuration: "Release"
+[12.208s] -- Installing: /workspace/ros_ws/install/controller/lib/controller/controller
+[12.209s] -- Set non-toolchain portion of runtime path of "/workspace/ros_ws/install/controller/lib/controller/controller" to ""
+[12.209s] -- Installing: /workspace/ros_ws/install/controller/share/controller//launch
+[12.209s] -- Installing: /workspace/ros_ws/install/controller/share/controller//launch/launch.xml
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.sh
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.dsv
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/controller/environment/path.sh
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/controller/environment/path.dsv
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.bash
+[12.210s] -- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.sh
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.zsh
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.dsv
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/controller/package.dsv
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/ament_index/resource_index/packages/controller
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig.cmake
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig-version.cmake
+[12.211s] -- Installing: /workspace/ros_ws/install/controller/share/controller/package.xml
+[12.213s] Invoked command in '/workspace/ros_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ros_ws/build/controller

@@ -1,0 +1,21 @@
+<launch>
+    <ros_gz_bridge
+        bridge_name="gz_bridge"
+        config_file="$(find-pkg-share simulator)/launch/gz_bridge_config.yaml"
+        container_name="ros_gz_container"
+        create_own_container="False"
+        namespace="/sim"
+        use_composition="False"
+        use_respawn="False"
+        log_level="info"
+        bridge_params="">
+    </ros_gz_bridge>
+
+    <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+        <arg name="gz_args" value="$(find-pkg-share simulator)/gazebo/plane.xml"/>
+    </include>
+
+    <include file="$(find-pkg-share controller)/launch/launch.xml">
+        <arg name="gz_args" value="$(find-pkg-share simulator)/gazebo/plane.xml"/>
+    </include>
+</launch>

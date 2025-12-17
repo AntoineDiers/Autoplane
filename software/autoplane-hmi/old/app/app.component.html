@@ -1,0 +1,60 @@
+<div class="body">
+    
+    <!-- State -->
+    
+    <div class="state-section">
+
+        <!-- Connection -->
+
+        <div [ngStyle]="{'background-color': connection_state.connected ? 'var(--green-color)' : 'var(--red-color)'}" class="connection">
+            <div *ngIf="connection_state.connected"> Connected </div>
+            <div *ngIf="!connection_state.connected"> Disonnected </div>
+            <div *ngIf="connection_state.connected">
+                Ping : {{connection_state.ping_ms!.toFixed(0)}} ms
+            </div>
+        </div>
+
+        <!-- Navigation -->
+
+        <div>
+            <div class="nav-data">
+                <div>Speed : {{getSpeedKmh().toFixed(0)}} km/h</div>
+                <div>Altitude : {{state.navigation_data.position.altitude_m.toFixed(0)}} m</div>
+            </div>
+
+            <div class="attitude">
+                <div class="attitude-field">
+                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+state.navigation_data.attitude.roll_deg+'deg)'}" src="icons/attitude/back.png">
+                    <div class="attitude-value">Roll : {{state.navigation_data.attitude.roll_deg.toFixed(0)}}°</div>
+                </div>
+
+                <div class="attitude-field">
+                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+state.navigation_data.attitude.pitch_deg+'deg)'}" src="icons/attitude/side.png">
+                    <div class="attitude-value">Pitch : {{state.navigation_data.attitude.pitch_deg.toFixed(0)}}°</div>
+                </div>
+
+                <div class="attitude-field">
+                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+state.navigation_data.attitude.yaw_deg+'deg)'}" src="icons/attitude/top.png">
+                    <div class="attitude-value">Yaw : {{state.navigation_data.attitude.yaw_deg.toFixed(0)}}°</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mode -->
+
+        <div class="modes">
+            <div class="mode-option mode-idle"      [ngClass]="getModeState(Mode.IDLE)"     (click)="onSetMode(Mode.IDLE)">IDLE</div>
+            <div class="mode-option mode-takeoff"   [ngClass]="getModeState(Mode.TAKEOFF)"  (click)="onSetMode(Mode.TAKEOFF)">TAKEOFF</div>
+            <div class="mode-option mode-manual"    [ngClass]="getModeState(Mode.MANUAL)"   (click)="onSetMode(Mode.MANUAL)">MANUAL</div>
+            <div class="mode-option mode-auto"      [ngClass]="getModeState(Mode.AUTO)"     (click)="onSetMode(Mode.AUTO)">AUTO</div>
+            <div class="mode-option mode-landing"   [ngClass]="getModeState(Mode.LANDING)"  (click)="onSetMode(Mode.LANDING)">LANDING</div>
+        </div>
+    
+    </div>
+
+
+    <div class="content">
+        <div id="map" class="map">
+        </div>
+    </div>
+</div>

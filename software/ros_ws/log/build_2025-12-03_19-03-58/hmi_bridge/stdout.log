@@ -1,0 +1,23 @@
+[ 33%] Building CXX object CMakeFiles/hmi_bridge.dir/src/main.cpp.o
+[ 66%] Linking CXX executable hmi_bridge
+[100%] Built target hmi_bridge
+-- Install configuration: "Release"
+-- Installing: /workspace/ros_ws/install/hmi_bridge/lib/hmi_bridge/hmi_bridge
+-- Set non-toolchain portion of runtime path of "/workspace/ros_ws/install/hmi_bridge/lib/hmi_bridge/hmi_bridge" to ""
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge//launch
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge//launch/launch.xml
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/package_run_dependencies/hmi_bridge
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/parent_prefix_path/hmi_bridge
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.sh
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.dsv
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.sh
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.dsv
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.bash
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.sh
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.zsh
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.dsv
+-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.dsv
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/packages/hmi_bridge
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig.cmake
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig-version.cmake
+-- Up-to-date: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.xml

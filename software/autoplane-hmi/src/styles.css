@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+:root {
+  --main-bg-color: rgb(31, 30, 32);
+  --secondary-bg-color: rgb(77, 77, 77);
+  --text-color: rgb(228, 228, 228);
+  --green-color: rgb(35, 143, 35);
+  --red-color: rgb(156, 17, 17);
+}

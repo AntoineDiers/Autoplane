@@ -1,0 +1,24 @@
+[0.007s] Invoking command in '/workspace/ros_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/controller -- -j20 -l20
+[0.064s] [100%] Built target controller
+[0.065s] Invoked command in '/workspace/ros_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/controller -- -j20 -l20
+[0.065s] Invoking command in '/workspace/ros_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ros_ws/build/controller
+[0.081s] -- Install configuration: "Release"
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/lib/controller/controller
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller//launch
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller//launch/launch.xml
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.sh
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.dsv
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/path.sh
+[0.081s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/environment/path.dsv
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.bash
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.sh
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.zsh
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/local_setup.dsv
+[0.082s] -- Installing: /workspace/ros_ws/install/controller/share/controller/package.dsv
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/ament_index/resource_index/packages/controller
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig.cmake
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig-version.cmake
+[0.082s] -- Up-to-date: /workspace/ros_ws/install/controller/share/controller/package.xml
+[0.082s] Invoked command in '/workspace/ros_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ros_ws/build/controller

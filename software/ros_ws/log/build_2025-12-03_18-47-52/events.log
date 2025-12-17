@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000060] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000091] (hmi_bridge) JobQueued: {'identifier': 'hmi_bridge', 'dependencies': OrderedDict()}
+[0.000111] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000586] (controller) JobStarted: {'identifier': 'controller'}
+[0.004672] (hmi_bridge) JobStarted: {'identifier': 'hmi_bridge'}
+[0.006244] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.008980] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.009704] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[0.010269] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/controller', '--', '-j20', '-l20'], 'cwd': '/workspace/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '8a36f8a1e4aa', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.011150] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'cmake'}
+[0.011877] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'build'}
+[0.012097] (hmi_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/hmi_bridge', '--', '-j20', '-l20'], 'cwd': '/workspace/build/hmi_bridge', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '8a36f8a1e4aa', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/hmi_bridge', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.013316] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'cmake'}
+[0.013824] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'build'}
+[0.013968] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/simulator', '--', '-j20', '-l20'], 'cwd': '/workspace/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '8a36f8a1e4aa', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.045338] (simulator) CommandEnded: {'returncode': 0}
+[0.045890] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'install'}
+[0.051693] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/simulator'], 'cwd': '/workspace/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '8a36f8a1e4aa', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.056942] (hmi_bridge) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/hmi_bridge.dir/src/main.cpp.o\n'}
+[0.058211] (hmi_bridge) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/hmi_bridge.dir/src/Bridge.cpp.o\n'}
+[0.058617] (simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.058861] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator//launch\n'}
+[0.058941] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator//launch/launch.xml\n'}
+[0.058973] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator//launch/gz_bridge_config.yaml\n'}
+[0.059006] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator//gazebo\n'}
+[0.059083] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator//gazebo/plane.xml\n'}
+[0.059154] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/ament_index/resource_index/package_run_dependencies/simulator\n'}
+[0.059188] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/ament_index/resource_index/parent_prefix_path/simulator\n'}
+[0.059218] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/environment/ament_prefix_path.sh\n'}
+[0.059249] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/environment/ament_prefix_path.dsv\n'}
+[0.059277] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/environment/path.sh\n'}
+[0.059306] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/environment/path.dsv\n'}
+[0.059336] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/local_setup.bash\n'}
+[0.059369] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/local_setup.sh\n'}
+[0.059443] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/local_setup.zsh\n'}
+[0.059575] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/local_setup.dsv\n'}
+[0.059619] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/package.dsv\n'}
+[0.059649] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/ament_index/resource_index/packages/simulator\n'}
+[0.059689] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/cmake/simulatorConfig.cmake\n'}
+[0.059720] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/cmake/simulatorConfig-version.cmake\n'}
+[0.059750] (simulator) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/simulator/share/simulator/package.xml\n'}
+[0.060801] (simulator) CommandEnded: {'returncode': 0}
+[0.071620] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 0}
+[0.072055] (controller) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[0.072133] (hmi_bridge) StderrLine: {'line': b'In file included from /workspace/src/hmi_bridge/src/main.cpp:1:\n'}
+[0.072176] (hmi_bridge) StderrLine: {'line': b'/workspace/src/hmi_bridge/src/Bridge.h:3:10: fatal error: nlohmann/json.hpp: No such file or directory\n'}
+[0.072209] (hmi_bridge) StderrLine: {'line': b'    3 | #include <nlohmann/json.hpp>\n'}
+[0.072239] (hmi_bridge) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~~~\n'}
+[0.072269] (hmi_bridge) StderrLine: {'line': b'In file included from /workspace/src/hmi_bridge/src/Bridge.cpp:1:\n'}
+[0.072298] (hmi_bridge) StderrLine: {'line': b'/workspace/src/hmi_bridge/src/Bridge.h:3:10: fatal error: nlohmann/json.hpp: No such file or directory\n'}
+[0.072328] (hmi_bridge) StderrLine: {'line': b'    3 | #include <nlohmann/json.hpp>\n'}
+[0.072359] (hmi_bridge) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~~~\n'}
+[0.072390] (hmi_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[0.072417] (hmi_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[0.072444] (hmi_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hmi_bridge.dir/build.make:76: CMakeFiles/hmi_bridge.dir/src/Bridge.cpp.o] Error 1\n'}
+[0.072472] (hmi_bridge) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[0.072500] (hmi_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hmi_bridge.dir/build.make:90: CMakeFiles/hmi_bridge.dir/src/main.cpp.o] Error 1\n'}
+[0.072568] (hmi_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hmi_bridge.dir/all] Error 2\n'}
+[0.072597] (hmi_bridge) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.072625] (controller) CommandEnded: {'returncode': 0}
+[0.072853] (controller) JobProgress: {'identifier': 'controller', 'progress': 'install'}
+[0.073010] (controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/controller'], 'cwd': '/workspace/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '8a36f8a1e4aa', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.073715] (hmi_bridge) CommandEnded: {'returncode': 2}
+[0.076642] (hmi_bridge) JobEnded: {'identifier': 'hmi_bridge', 'rc': 2}
+[0.077259] (controller) JobEnded: {'identifier': 'controller', 'rc': 'SIGINT'}
+[0.087554] (-) EventReactorShutdown: {}

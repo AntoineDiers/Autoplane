@@ -1,0 +1,5 @@
+[0.009s] Invoking command in '/workspace/ros_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/controller -- -j20 -l20
+[0.016s] CMake Error: The current CMakeCache.txt directory /workspace/ros_ws/build/controller/CMakeCache.txt is different than the directory /workspace/build/controller where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.034s] CMake Error: The source directory "/workspace/src/controller" does not exist.
+[0.034s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.034s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1

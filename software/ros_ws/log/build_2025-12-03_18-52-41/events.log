@@ -1,0 +1,303 @@
+[0.000000] (-) TimerEvent: {}
+[0.000066] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000149] (hmi_bridge) JobQueued: {'identifier': 'hmi_bridge', 'dependencies': OrderedDict()}
+[0.000183] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000300] (controller) JobStarted: {'identifier': 'controller'}
+[0.003302] (hmi_bridge) JobStarted: {'identifier': 'hmi_bridge'}
+[0.005693] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.007973] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.008227] (controller) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ros_ws/src/controller', '-DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/controller'], 'cwd': '/workspace/ros_ws/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.008673] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'cmake'}
+[0.008880] (hmi_bridge) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ros_ws/src/hmi_bridge', '-DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/hmi_bridge'], 'cwd': '/workspace/ros_ws/build/hmi_bridge', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/hmi_bridge', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.009533] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'cmake'}
+[0.009752] (simulator) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ros_ws/src/simulator', '-DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/simulator'], 'cwd': '/workspace/ros_ws/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.085392] (simulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.085876] (controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.086525] (hmi_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099749] (-) TimerEvent: {}
+[0.131574] (simulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.134043] (controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.134447] (hmi_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.147544] (simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.147684] (controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.148997] (hmi_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199848] (-) TimerEvent: {}
+[0.213075] (controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.214057] (simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.215766] (hmi_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.218731] (controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.219388] (controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.219695] (controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.224228] (simulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.224438] (simulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.224835] (simulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.225844] (hmi_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.226031] (hmi_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.226226] (hmi_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.226614] (controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.232156] (simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.233021] (hmi_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.295531] (simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.297323] (controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.298126] (hmi_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299923] (-) TimerEvent: {}
+[0.301212] (simulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.301364] (simulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.301618] (simulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.302997] (controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.303154] (controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.303457] (controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.303627] (simulator) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.303788] (hmi_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.303976] (hmi_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.304301] (hmi_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.304883] (controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.306076] (hmi_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.399185] (controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.400041] (-) TimerEvent: {}
+[0.401421] (simulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.405951] (hmi_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.487738] (controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.487858] (hmi_bridge) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.500152] (-) TimerEvent: {}
+[0.522057] (hmi_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.522252] (controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.533161] (controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.533334] (hmi_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.548591] (hmi_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.548800] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.549489] (simulator) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.551241] (simulator) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.552294] (simulator) StdoutLine: {'line': b'-- Build files have been written to: /workspace/ros_ws/build/simulator\n'}
+[0.555582] (simulator) CommandEnded: {'returncode': 0}
+[0.555935] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'build'}
+[0.556332] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/simulator', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.564724] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.564917] (hmi_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.586526] (simulator) CommandEnded: {'returncode': 0}
+[0.586976] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'install'}
+[0.592487] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/simulator'], 'cwd': '/workspace/ros_ws/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.600270] (-) TimerEvent: {}
+[0.601069] (simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.601274] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator//launch\n'}
+[0.601370] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator//launch/launch.xml\n'}
+[0.601574] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator//launch/gz_bridge_config.yaml\n'}
+[0.601874] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator//gazebo\n'}
+[0.602024] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator//gazebo/plane.xml\n'}
+[0.602484] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/ament_index/resource_index/package_run_dependencies/simulator\n'}
+[0.602665] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/ament_index/resource_index/parent_prefix_path/simulator\n'}
+[0.602844] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/environment/ament_prefix_path.sh\n'}
+[0.602992] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/environment/ament_prefix_path.dsv\n'}
+[0.603129] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/environment/path.sh\n'}
+[0.603270] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/environment/path.dsv\n'}
+[0.603402] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/local_setup.bash\n'}
+[0.603528] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/local_setup.sh\n'}
+[0.603669] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/local_setup.zsh\n'}
+[0.603800] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/local_setup.dsv\n'}
+[0.603930] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/package.dsv\n'}
+[0.604087] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/ament_index/resource_index/packages/simulator\n'}
+[0.604313] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/cmake/simulatorConfig.cmake\n'}
+[0.604444] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/cmake/simulatorConfig-version.cmake\n'}
+[0.604572] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/simulator/share/simulator/package.xml\n'}
+[0.605955] (simulator) CommandEnded: {'returncode': 0}
+[0.616504] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 0}
+[0.632711] (controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.632897] (hmi_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.635041] (hmi_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.635143] (controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700461] (-) TimerEvent: {}
+[0.723989] (controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.724355] (hmi_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.745764] (hmi_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.745942] (controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.768632] (controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.771904] (hmi_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800620] (-) TimerEvent: {}
+[0.822384] (controller) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.846927] (controller) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.864546] (controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.16 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[0.875101] (controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[0.876236] (controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.876335] (controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.876373] (hmi_bridge) StdoutLine: {'line': b'-- Configuring done (0.9s)\n'}
+[0.882869] (hmi_bridge) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.884804] (hmi_bridge) StdoutLine: {'line': b'-- Build files have been written to: /workspace/ros_ws/build/hmi_bridge\n'}
+[0.890127] (hmi_bridge) CommandEnded: {'returncode': 0}
+[0.890418] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'build'}
+[0.890602] (hmi_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/hmi_bridge', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/hmi_bridge', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/hmi_bridge', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.900730] (-) TimerEvent: {}
+[0.927119] (hmi_bridge) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/hmi_bridge.dir/src/Bridge.cpp.o\n'}
+[0.927291] (hmi_bridge) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/hmi_bridge.dir/src/main.cpp.o\n'}
+[1.000901] (-) TimerEvent: {}
+[1.047325] (controller) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.058487] (controller) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.062138] (controller) StdoutLine: {'line': b'-- Build files have been written to: /workspace/ros_ws/build/controller\n'}
+[1.068890] (controller) CommandEnded: {'returncode': 0}
+[1.069266] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[1.069428] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/ros_ws/build/controller', '--', '-j20', '-l20'], 'cwd': '/workspace/ros_ws/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.101008] (-) TimerEvent: {}
+[1.114278] (controller) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/controller.dir/src/main.cpp.o\n'}
+[1.201116] (-) TimerEvent: {}
+[1.301332] (-) TimerEvent: {}
+[1.401653] (-) TimerEvent: {}
+[1.501860] (-) TimerEvent: {}
+[1.602060] (-) TimerEvent: {}
+[1.702271] (-) TimerEvent: {}
+[1.802541] (-) TimerEvent: {}
+[1.902701] (-) TimerEvent: {}
+[2.002884] (-) TimerEvent: {}
+[2.103060] (-) TimerEvent: {}
+[2.203262] (-) TimerEvent: {}
+[2.303536] (-) TimerEvent: {}
+[2.403744] (-) TimerEvent: {}
+[2.503929] (-) TimerEvent: {}
+[2.604137] (-) TimerEvent: {}
+[2.704381] (-) TimerEvent: {}
+[2.804590] (-) TimerEvent: {}
+[2.904782] (-) TimerEvent: {}
+[3.004963] (-) TimerEvent: {}
+[3.105169] (-) TimerEvent: {}
+[3.205361] (-) TimerEvent: {}
+[3.305615] (-) TimerEvent: {}
+[3.405833] (-) TimerEvent: {}
+[3.506018] (-) TimerEvent: {}
+[3.606244] (-) TimerEvent: {}
+[3.706430] (-) TimerEvent: {}
+[3.806667] (-) TimerEvent: {}
+[3.906850] (-) TimerEvent: {}
+[4.007053] (-) TimerEvent: {}
+[4.107322] (-) TimerEvent: {}
+[4.207537] (-) TimerEvent: {}
+[4.307703] (-) TimerEvent: {}
+[4.407876] (-) TimerEvent: {}
+[4.508148] (-) TimerEvent: {}
+[4.608366] (-) TimerEvent: {}
+[4.708636] (-) TimerEvent: {}
+[4.808828] (-) TimerEvent: {}
+[4.909029] (-) TimerEvent: {}
+[5.009203] (-) TimerEvent: {}
+[5.109450] (-) TimerEvent: {}
+[5.209622] (-) TimerEvent: {}
+[5.309804] (-) TimerEvent: {}
+[5.409995] (-) TimerEvent: {}
+[5.510196] (-) TimerEvent: {}
+[5.610405] (-) TimerEvent: {}
+[5.710580] (-) TimerEvent: {}
+[5.810772] (-) TimerEvent: {}
+[5.910946] (-) TimerEvent: {}
+[6.011143] (-) TimerEvent: {}
+[6.111354] (-) TimerEvent: {}
+[6.211532] (-) TimerEvent: {}
+[6.311739] (-) TimerEvent: {}
+[6.411878] (-) TimerEvent: {}
+[6.512041] (-) TimerEvent: {}
+[6.612215] (-) TimerEvent: {}
+[6.712375] (-) TimerEvent: {}
+[6.812549] (-) TimerEvent: {}
+[6.912793] (-) TimerEvent: {}
+[7.012943] (-) TimerEvent: {}
+[7.113114] (-) TimerEvent: {}
+[7.213285] (-) TimerEvent: {}
+[7.313460] (-) TimerEvent: {}
+[7.413625] (-) TimerEvent: {}
+[7.513774] (-) TimerEvent: {}
+[7.613922] (-) TimerEvent: {}
+[7.714103] (-) TimerEvent: {}
+[7.814277] (-) TimerEvent: {}
+[7.914422] (-) TimerEvent: {}
+[8.014567] (-) TimerEvent: {}
+[8.114688] (-) TimerEvent: {}
+[8.214829] (-) TimerEvent: {}
+[8.314978] (-) TimerEvent: {}
+[8.415157] (-) TimerEvent: {}
+[8.515329] (-) TimerEvent: {}
+[8.615477] (-) TimerEvent: {}
+[8.715664] (-) TimerEvent: {}
+[8.815811] (-) TimerEvent: {}
+[8.915958] (-) TimerEvent: {}
+[9.016112] (-) TimerEvent: {}
+[9.116264] (-) TimerEvent: {}
+[9.216434] (-) TimerEvent: {}
+[9.316601] (-) TimerEvent: {}
+[9.416754] (-) TimerEvent: {}
+[9.516900] (-) TimerEvent: {}
+[9.617088] (-) TimerEvent: {}
+[9.705847] (hmi_bridge) StdoutLine: {'line': b'[100%] Linking CXX executable hmi_bridge\n'}
+[9.717188] (-) TimerEvent: {}
+[9.799632] (hmi_bridge) StdoutLine: {'line': b'[100%] Built target hmi_bridge\n'}
+[9.809002] (hmi_bridge) CommandEnded: {'returncode': 0}
+[9.809548] (hmi_bridge) JobProgress: {'identifier': 'hmi_bridge', 'progress': 'install'}
+[9.809943] (hmi_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/hmi_bridge'], 'cwd': '/workspace/ros_ws/build/hmi_bridge', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/hmi_bridge', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.815942] (hmi_bridge) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[9.816089] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/lib/hmi_bridge/hmi_bridge\n'}
+[9.816497] (hmi_bridge) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/ros_ws/install/hmi_bridge/lib/hmi_bridge/hmi_bridge" to ""\n'}
+[9.816601] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge//launch\n'}
+[9.816697] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/package_run_dependencies/hmi_bridge\n'}
+[9.816767] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/parent_prefix_path/hmi_bridge\n'}
+[9.816833] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.sh\n'}
+[9.817161] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/ament_prefix_path.dsv\n'}
+[9.817247] (-) TimerEvent: {}
+[9.817262] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.sh\n'}
+[9.817387] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/environment/path.dsv\n'}
+[9.817475] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.bash\n'}
+[9.817573] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.sh\n'}
+[9.817679] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.zsh\n'}
+[9.817783] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/local_setup.dsv\n'}
+[9.817890] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.dsv\n'}
+[9.817959] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/ament_index/resource_index/packages/hmi_bridge\n'}
+[9.818027] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig.cmake\n'}
+[9.818093] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/cmake/hmi_bridgeConfig-version.cmake\n'}
+[9.818164] (hmi_bridge) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/hmi_bridge/share/hmi_bridge/package.xml\n'}
+[9.818708] (hmi_bridge) CommandEnded: {'returncode': 0}
+[9.825555] (hmi_bridge) JobEnded: {'identifier': 'hmi_bridge', 'rc': 0}
+[9.917474] (-) TimerEvent: {}
+[10.017758] (-) TimerEvent: {}
+[10.117934] (-) TimerEvent: {}
+[10.218132] (-) TimerEvent: {}
+[10.318335] (-) TimerEvent: {}
+[10.418511] (-) TimerEvent: {}
+[10.518797] (-) TimerEvent: {}
+[10.619014] (-) TimerEvent: {}
+[10.719186] (-) TimerEvent: {}
+[10.819389] (-) TimerEvent: {}
+[10.919593] (-) TimerEvent: {}
+[11.019768] (-) TimerEvent: {}
+[11.119935] (-) TimerEvent: {}
+[11.220141] (-) TimerEvent: {}
+[11.320364] (-) TimerEvent: {}
+[11.420530] (-) TimerEvent: {}
+[11.520695] (-) TimerEvent: {}
+[11.620866] (-) TimerEvent: {}
+[11.721033] (-) TimerEvent: {}
+[11.821206] (-) TimerEvent: {}
+[11.921397] (-) TimerEvent: {}
+[12.021686] (-) TimerEvent: {}
+[12.062415] (controller) StdoutLine: {'line': b'[100%] Linking CXX executable controller\n'}
+[12.121786] (-) TimerEvent: {}
+[12.191390] (controller) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[12.200646] (controller) CommandEnded: {'returncode': 0}
+[12.201405] (controller) JobProgress: {'identifier': 'controller', 'progress': 'install'}
+[12.201776] (controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/ros_ws/build/controller'], 'cwd': '/workspace/ros_ws/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': '3c44a5cc4940', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/ros_ws/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[12.208348] (controller) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[12.208593] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/lib/controller/controller\n'}
+[12.209228] (controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/ros_ws/install/controller/lib/controller/controller" to ""\n'}
+[12.209441] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller//launch\n'}
+[12.209574] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller//launch/launch.xml\n'}
+[12.209997] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/ament_index/resource_index/package_run_dependencies/controller\n'}
+[12.210128] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/ament_index/resource_index/parent_prefix_path/controller\n'}
+[12.210228] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.sh\n'}
+[12.210323] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/environment/ament_prefix_path.dsv\n'}
+[12.210410] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/environment/path.sh\n'}
+[12.210504] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/environment/path.dsv\n'}
+[12.210590] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.bash\n'}
+[12.210688] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.sh\n'}
+[12.210777] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.zsh\n'}
+[12.210858] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/local_setup.dsv\n'}
+[12.210938] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/package.dsv\n'}
+[12.211044] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/ament_index/resource_index/packages/controller\n'}
+[12.211151] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig.cmake\n'}
+[12.211229] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/cmake/controllerConfig-version.cmake\n'}
+[12.211307] (controller) StdoutLine: {'line': b'-- Installing: /workspace/ros_ws/install/controller/share/controller/package.xml\n'}
+[12.212681] (controller) CommandEnded: {'returncode': 0}
+[12.221286] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[12.221744] (-) EventReactorShutdown: {}

@@ -1,0 +1,246 @@
+[0.000000] (-) TimerEvent: {}
+[0.000055] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000083] (simulator) JobQueued: {'identifier': 'simulator', 'dependencies': OrderedDict()}
+[0.000770] (controller) JobStarted: {'identifier': 'controller'}
+[0.004457] (simulator) JobStarted: {'identifier': 'simulator'}
+[0.006328] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.006548] (controller) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/controller', '-DCMAKE_INSTALL_PREFIX=/workspace/install/controller'], 'cwd': '/workspace/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': 'c86832a85b9c', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.007479] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'cmake'}
+[0.007690] (simulator) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/simulator', '-DCMAKE_INSTALL_PREFIX=/workspace/install/simulator'], 'cwd': '/workspace/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': 'c86832a85b9c', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099910] (-) TimerEvent: {}
+[0.101840] (controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.102145] (simulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.146644] (simulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.147346] (controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.160483] (controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.160952] (simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200015] (-) TimerEvent: {}
+[0.232898] (controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.233191] (simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.240625] (simulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.240865] (controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.241014] (simulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.241151] (controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.241261] (simulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.241346] (controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.248777] (controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.249572] (simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300122] (-) TimerEvent: {}
+[0.316893] (controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.318615] (simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.324025] (simulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.324286] (simulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.324403] (controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.324697] (simulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.324783] (controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.324968] (controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.326579] (controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.326670] (simulator) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.400268] (-) TimerEvent: {}
+[0.420835] (controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.421985] (simulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.497498] (controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.500341] (-) TimerEvent: {}
+[0.524714] (controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.533009] (controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.543510] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.555295] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.556663] (simulator) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.558208] (simulator) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.559287] (simulator) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/simulator\n'}
+[0.562345] (simulator) CommandEnded: {'returncode': 0}
+[0.562644] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'build'}
+[0.563002] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/simulator', '--', '-j20', '-l20'], 'cwd': '/workspace/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': 'c86832a85b9c', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.590610] (simulator) CommandEnded: {'returncode': 0}
+[0.591026] (simulator) JobProgress: {'identifier': 'simulator', 'progress': 'install'}
+[0.596296] (simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/simulator'], 'cwd': '/workspace/build/simulator', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': 'c86832a85b9c', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/simulator', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.600414] (-) TimerEvent: {}
+[0.603843] (simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.603958] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator//launch\n'}
+[0.604214] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator//launch/launch.xml\n'}
+[0.604366] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator//launch/gz_bridge_config.yaml\n'}
+[0.604547] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator//gazebo\n'}
+[0.604772] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator//gazebo/plane.xml\n'}
+[0.605203] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/ament_index/resource_index/package_run_dependencies/simulator\n'}
+[0.605284] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/ament_index/resource_index/parent_prefix_path/simulator\n'}
+[0.605342] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/environment/ament_prefix_path.sh\n'}
+[0.605397] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/environment/ament_prefix_path.dsv\n'}
+[0.605452] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/environment/path.sh\n'}
+[0.605516] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/environment/path.dsv\n'}
+[0.605583] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/local_setup.bash\n'}
+[0.605636] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/local_setup.sh\n'}
+[0.605695] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/local_setup.zsh\n'}
+[0.605748] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/local_setup.dsv\n'}
+[0.605801] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/package.dsv\n'}
+[0.605877] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/ament_index/resource_index/packages/simulator\n'}
+[0.605950] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/cmake/simulatorConfig.cmake\n'}
+[0.606019] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/cmake/simulatorConfig-version.cmake\n'}
+[0.606090] (simulator) StdoutLine: {'line': b'-- Installing: /workspace/install/simulator/share/simulator/package.xml\n'}
+[0.607041] (simulator) CommandEnded: {'returncode': 0}
+[0.617266] (simulator) JobEnded: {'identifier': 'simulator', 'rc': 0}
+[0.617536] (controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.619465] (controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700606] (-) TimerEvent: {}
+[0.704108] (controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.724465] (controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.743103] (controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.795102] (controller) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.800670] (-) TimerEvent: {}
+[0.820527] (controller) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.838759] (controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.16 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[0.848593] (controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[0.849592] (controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.849681] (controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.900785] (-) TimerEvent: {}
+[1.000943] (-) TimerEvent: {}
+[1.009020] (controller) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.019737] (controller) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.022156] (controller) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/controller\n'}
+[1.028609] (controller) CommandEnded: {'returncode': 0}
+[1.028897] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[1.029077] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/controller', '--', '-j20', '-l20'], 'cwd': '/workspace/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': 'c86832a85b9c', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.074166] (controller) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/controller.dir/src/main.cpp.o\n'}
+[1.101046] (-) TimerEvent: {}
+[1.201230] (-) TimerEvent: {}
+[1.301377] (-) TimerEvent: {}
+[1.401549] (-) TimerEvent: {}
+[1.501724] (-) TimerEvent: {}
+[1.601867] (-) TimerEvent: {}
+[1.702029] (-) TimerEvent: {}
+[1.802219] (-) TimerEvent: {}
+[1.902422] (-) TimerEvent: {}
+[2.002676] (-) TimerEvent: {}
+[2.102824] (-) TimerEvent: {}
+[2.202972] (-) TimerEvent: {}
+[2.303142] (-) TimerEvent: {}
+[2.403315] (-) TimerEvent: {}
+[2.503475] (-) TimerEvent: {}
+[2.603614] (-) TimerEvent: {}
+[2.703751] (-) TimerEvent: {}
+[2.803915] (-) TimerEvent: {}
+[2.904086] (-) TimerEvent: {}
+[3.004255] (-) TimerEvent: {}
+[3.104437] (-) TimerEvent: {}
+[3.204616] (-) TimerEvent: {}
+[3.304754] (-) TimerEvent: {}
+[3.404901] (-) TimerEvent: {}
+[3.505071] (-) TimerEvent: {}
+[3.605212] (-) TimerEvent: {}
+[3.705371] (-) TimerEvent: {}
+[3.805552] (-) TimerEvent: {}
+[3.905717] (-) TimerEvent: {}
+[4.005864] (-) TimerEvent: {}
+[4.106002] (-) TimerEvent: {}
+[4.206140] (-) TimerEvent: {}
+[4.306278] (-) TimerEvent: {}
+[4.406512] (-) TimerEvent: {}
+[4.506661] (-) TimerEvent: {}
+[4.606801] (-) TimerEvent: {}
+[4.706963] (-) TimerEvent: {}
+[4.807134] (-) TimerEvent: {}
+[4.907304] (-) TimerEvent: {}
+[5.007471] (-) TimerEvent: {}
+[5.107577] (-) TimerEvent: {}
+[5.207725] (-) TimerEvent: {}
+[5.307945] (-) TimerEvent: {}
+[5.408145] (-) TimerEvent: {}
+[5.508310] (-) TimerEvent: {}
+[5.608481] (-) TimerEvent: {}
+[5.708674] (-) TimerEvent: {}
+[5.808820] (-) TimerEvent: {}
+[5.908974] (-) TimerEvent: {}
+[6.009119] (-) TimerEvent: {}
+[6.109264] (-) TimerEvent: {}
+[6.209448] (-) TimerEvent: {}
+[6.309599] (-) TimerEvent: {}
+[6.409757] (-) TimerEvent: {}
+[6.509913] (-) TimerEvent: {}
+[6.610076] (-) TimerEvent: {}
+[6.710223] (-) TimerEvent: {}
+[6.810390] (-) TimerEvent: {}
+[6.910655] (-) TimerEvent: {}
+[7.010796] (-) TimerEvent: {}
+[7.110963] (-) TimerEvent: {}
+[7.211127] (-) TimerEvent: {}
+[7.311271] (-) TimerEvent: {}
+[7.411444] (-) TimerEvent: {}
+[7.511607] (-) TimerEvent: {}
+[7.611749] (-) TimerEvent: {}
+[7.711890] (-) TimerEvent: {}
+[7.812058] (-) TimerEvent: {}
+[7.912286] (-) TimerEvent: {}
+[8.012445] (-) TimerEvent: {}
+[8.112584] (-) TimerEvent: {}
+[8.212762] (-) TimerEvent: {}
+[8.312910] (-) TimerEvent: {}
+[8.413060] (-) TimerEvent: {}
+[8.513212] (-) TimerEvent: {}
+[8.613341] (-) TimerEvent: {}
+[8.713505] (-) TimerEvent: {}
+[8.813644] (-) TimerEvent: {}
+[8.913777] (-) TimerEvent: {}
+[9.013928] (-) TimerEvent: {}
+[9.114081] (-) TimerEvent: {}
+[9.214235] (-) TimerEvent: {}
+[9.314370] (-) TimerEvent: {}
+[9.414542] (-) TimerEvent: {}
+[9.514679] (-) TimerEvent: {}
+[9.614811] (-) TimerEvent: {}
+[9.714948] (-) TimerEvent: {}
+[9.815110] (-) TimerEvent: {}
+[9.915267] (-) TimerEvent: {}
+[10.015432] (-) TimerEvent: {}
+[10.115661] (-) TimerEvent: {}
+[10.215802] (-) TimerEvent: {}
+[10.315960] (-) TimerEvent: {}
+[10.416124] (-) TimerEvent: {}
+[10.516279] (-) TimerEvent: {}
+[10.616464] (-) TimerEvent: {}
+[10.716612] (-) TimerEvent: {}
+[10.816751] (-) TimerEvent: {}
+[10.916906] (-) TimerEvent: {}
+[11.017045] (-) TimerEvent: {}
+[11.117195] (-) TimerEvent: {}
+[11.217364] (-) TimerEvent: {}
+[11.317552] (-) TimerEvent: {}
+[11.417712] (-) TimerEvent: {}
+[11.517852] (-) TimerEvent: {}
+[11.618009] (-) TimerEvent: {}
+[11.718145] (-) TimerEvent: {}
+[11.818302] (-) TimerEvent: {}
+[11.918479] (-) TimerEvent: {}
+[12.018580] (-) TimerEvent: {}
+[12.118735] (-) TimerEvent: {}
+[12.218899] (-) TimerEvent: {}
+[12.319049] (-) TimerEvent: {}
+[12.406906] (controller) StdoutLine: {'line': b'[100%] Linking CXX executable controller\n'}
+[12.419143] (-) TimerEvent: {}
+[12.519323] (-) TimerEvent: {}
+[12.597883] (controller) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[12.604487] (controller) CommandEnded: {'returncode': 0}
+[12.604968] (controller) JobProgress: {'identifier': 'controller', 'progress': 'install'}
+[12.605211] (controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/controller'], 'cwd': '/workspace/build/controller', 'env': OrderedDict({'NODE_VERSION': '24.11.1', 'HOSTNAME': 'c86832a85b9c', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NVM_DIR': '/usr/local/nvm', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/nvm/versions/node/v24.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'NG_CLI_ANALYTICS': 'false', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/build/controller', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[12.610471] (controller) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[12.610576] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/lib/controller/controller\n'}
+[12.611236] (controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/workspace/install/controller/lib/controller/controller" to ""\n'}
+[12.611313] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller//launch\n'}
+[12.611635] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller//launch/launch.xml\n'}
+[12.611924] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/ament_index/resource_index/package_run_dependencies/controller\n'}
+[12.612014] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/ament_index/resource_index/parent_prefix_path/controller\n'}
+[12.612068] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/environment/ament_prefix_path.sh\n'}
+[12.612196] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/environment/ament_prefix_path.dsv\n'}
+[12.612247] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/environment/path.sh\n'}
+[12.612391] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/environment/path.dsv\n'}
+[12.612438] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/local_setup.bash\n'}
+[12.612484] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/local_setup.sh\n'}
+[12.612535] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/local_setup.zsh\n'}
+[12.612581] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/local_setup.dsv\n'}
+[12.612639] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/package.dsv\n'}
+[12.612701] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/ament_index/resource_index/packages/controller\n'}
+[12.612761] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/cmake/controllerConfig.cmake\n'}
+[12.612807] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/cmake/controllerConfig-version.cmake\n'}
+[12.612857] (controller) StdoutLine: {'line': b'-- Installing: /workspace/install/controller/share/controller/package.xml\n'}
+[12.613737] (controller) CommandEnded: {'returncode': 0}
+[12.619391] (-) TimerEvent: {}
+[12.621997] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[12.622354] (-) EventReactorShutdown: {}

@@ -1,0 +1,44 @@
+[0.004s] Invoking command in '/workspace/build/simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/src/simulator -DCMAKE_INSTALL_PREFIX=/workspace/install/simulator
+[0.098s] -- The C compiler identification is GNU 13.3.0
+[0.142s] -- The CXX compiler identification is GNU 13.3.0
+[0.157s] -- Detecting C compiler ABI info
+[0.229s] -- Detecting C compiler ABI info - done
+[0.236s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.237s] -- Detecting C compile features
+[0.237s] -- Detecting C compile features - done
+[0.245s] -- Detecting CXX compiler ABI info
+[0.314s] -- Detecting CXX compiler ABI info - done
+[0.320s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.320s] -- Detecting CXX compile features
+[0.320s] -- Detecting CXX compile features - done
+[0.322s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.418s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.552s] -- Configuring done (0.5s)
+[0.554s] -- Generating done (0.0s)
+[0.555s] -- Build files have been written to: /workspace/build/simulator
+[0.558s] Invoked command in '/workspace/build/simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/src/simulator -DCMAKE_INSTALL_PREFIX=/workspace/install/simulator
+[0.559s] Invoking command in '/workspace/build/simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/build/simulator -- -j20 -l20
+[0.586s] Invoked command in '/workspace/build/simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/build/simulator -- -j20 -l20
+[0.592s] Invoking command in '/workspace/build/simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/build/simulator
+[0.599s] -- Install configuration: ""
+[0.600s] -- Installing: /workspace/install/simulator/share/simulator//launch
+[0.600s] -- Installing: /workspace/install/simulator/share/simulator//launch/launch.xml
+[0.600s] -- Installing: /workspace/install/simulator/share/simulator//launch/gz_bridge_config.yaml
+[0.600s] -- Installing: /workspace/install/simulator/share/simulator//gazebo
+[0.600s] -- Installing: /workspace/install/simulator/share/simulator//gazebo/plane.xml
+[0.601s] -- Installing: /workspace/install/simulator/share/ament_index/resource_index/package_run_dependencies/simulator
+[0.601s] -- Installing: /workspace/install/simulator/share/ament_index/resource_index/parent_prefix_path/simulator
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/environment/ament_prefix_path.sh
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/environment/ament_prefix_path.dsv
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/environment/path.sh
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/environment/path.dsv
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/local_setup.bash
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/local_setup.sh
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/local_setup.zsh
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/local_setup.dsv
+[0.601s] -- Installing: /workspace/install/simulator/share/simulator/package.dsv
+[0.601s] -- Installing: /workspace/install/simulator/share/ament_index/resource_index/packages/simulator
+[0.602s] -- Installing: /workspace/install/simulator/share/simulator/cmake/simulatorConfig.cmake
+[0.602s] -- Installing: /workspace/install/simulator/share/simulator/cmake/simulatorConfig-version.cmake
+[0.602s] -- Installing: /workspace/install/simulator/share/simulator/package.xml
+[0.603s] Invoked command in '/workspace/build/simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/build/simulator
