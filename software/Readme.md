@@ -18,7 +18,11 @@ The Autoplane software runs on three machines, each one of them require a specif
 ./build.sh
 ```
 
-This script will generate : 
-- A docker image called **autoplane** that contains the firmware that will run in the Autoplane Raspberry PI
+This script will generate the following results in the deploy folder : 
+- **autoplane-run.tar.gz** : contains the docker image that will run on the Raspberry PI
+- **docker-compose.yaml** : the docker-compose file for running the docker image
 - **autoplane-hmi_*.deb** : a Linux installer for the HMI 
 
+## Deploy 
+
+TODO
