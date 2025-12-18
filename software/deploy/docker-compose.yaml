@@ -1,0 +1,6 @@
+services:
+    autoplane:
+        image: autoplane-run:latest
+        container_name: autoplane
+        network_mode : host
+        entrypoint : /firmware/entrypoint.sh

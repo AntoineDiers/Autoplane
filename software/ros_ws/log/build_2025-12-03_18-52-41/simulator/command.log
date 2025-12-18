@@ -1,6 +1,0 @@
-Invoking command in '/workspace/ros_ws/build/simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/ros_ws/src/simulator -DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/simulator
-Invoked command in '/workspace/ros_ws/build/simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/ros_ws/src/simulator -DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/simulator
-Invoking command in '/workspace/ros_ws/build/simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/simulator -- -j20 -l20
-Invoked command in '/workspace/ros_ws/build/simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/ros_ws/build/simulator -- -j20 -l20
-Invoking command in '/workspace/ros_ws/build/simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ros_ws/build/simulator
-Invoked command in '/workspace/ros_ws/build/simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/ros_ws/build/simulator

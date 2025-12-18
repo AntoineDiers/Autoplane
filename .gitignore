@@ -1,1 +1,6 @@
-software/install
+software/deploy/*.tar.gz
+software/deploy/*.deb
+software/ros_ws/build
+software/ros_ws/install
+software/ros_ws/log
+software/docker/assets/firmware/ros

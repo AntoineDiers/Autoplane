@@ -1,6 +1,0 @@
-<launch>
-
-    <include file="$(find-pkg-share hmi_bridge)/launch/launch.xml">
-    </include>
-
-</launch>

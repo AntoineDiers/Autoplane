@@ -1,4 +1,0 @@
-<launch>
-    <node pkg="hmi_bridge" exec="hmi_bridge" name="hmi_bridge" output="screen">
-    </node>
-</launch>
