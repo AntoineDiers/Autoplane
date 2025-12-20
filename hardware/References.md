@@ -6,6 +6,7 @@
 |-----------------------|-----------|-------------------|---------------------------|---------------------------|------------------
 | Carbon fiber beam     | 12.5m     | 120               | 690                       |                           | [carbonetube](https://www.carbonetube.net/produit.php?cat=PP)
 | Carbon fiber shaft    | 4m        | 30                | 112                       |                           | [carbonetube](https://www.carbonetube.net/produit.php?cat=TCUB)
+| Aluminium sheet       | 0.4m²     | 22                | ?                         | 1.5mm thick               | [Leroy Merlin](https://www.leroymerlin.fr/produits/tole-aluminium-lisse-brut-gris-l-1000-x-l-200-mm-ep-0-8-mm-65268413.html)
 
 ### Batteries
 
