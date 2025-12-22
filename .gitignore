@@ -4,3 +4,7 @@ software/ros_ws/build
 software/ros_ws/install
 software/ros_ws/log
 software/docker/assets/firmware/ros
+software/autoplane-hmi/.angular
+software/autoplane-hmi/dist
+software/autoplane-hmi/node_modules
+**/.vscode
