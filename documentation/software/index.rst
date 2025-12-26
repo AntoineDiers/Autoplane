@@ -1,8 +1,6 @@
 Software
 ========================
 
-.. include:: ../hardware/equipments_configuration/user_pc/index.rst
-
 Architecture
 ------------------------
 
