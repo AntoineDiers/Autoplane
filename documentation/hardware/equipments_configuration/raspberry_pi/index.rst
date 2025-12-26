@@ -36,7 +36,7 @@ We will configure UDEV rules that will match a device to a file depending on whi
 
 .. code-block::
 
-    SUBSYSTEM=="usb", KERNEL=="3-2", DRIVERS=="usb",  SYMLINK+="imu"
+    SUBSYSTEM=="tty", KERNELS=="3-2:1.0", SYMLINK+="imu"
 
 - Run the following commands to apply the rules :
 
