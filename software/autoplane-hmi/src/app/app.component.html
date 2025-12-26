@@ -6,11 +6,11 @@
 
         <!-- Connection -->
 
-        <div [ngStyle]="{'background-color': connection_state.connected ? 'var(--green-color)' : 'var(--red-color)'}" class="connection">
-            <div *ngIf="connection_state.connected"> Connected </div>
-            <div *ngIf="!connection_state.connected"> Disonnected </div>
-            <div *ngIf="connection_state.connected">
-                Ping : {{connection_state.ping_ms!.toFixed(0)}} ms
+        <div [ngStyle]="{'background-color': ping_ms != null ? 'var(--green-color)' : 'var(--red-color)'}" class="connection">
+            <div *ngIf="ping_ms == null"> Disonnected </div>
+            <div *ngIf="ping_ms != null"> Connected </div>
+            <div *ngIf="ping_ms != null">
+                Ping : {{ping_ms!.toFixed(0)}} ms
             </div>
         </div>
 

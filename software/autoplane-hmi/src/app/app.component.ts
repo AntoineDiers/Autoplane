@@ -1,7 +1,6 @@
 import { Component, ChangeDetectorRef, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ConnectionState } from './Structs/ConnectionState';
 import { ModeState } from './Structs/ModeState';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
 import * as Leaflet from 'leaflet';
@@ -28,14 +27,16 @@ export class AppComponent implements AfterViewInit {
     attitude :  Attitude = DefaultAttitude;
     position :  Position = DefaultPosition;
 
-    connection_state : ConnectionState = { connected: true, ping_ms: 50 };
+    ping_ms : number | null = null;
 
     map : Leaflet.Map | null = null;
     marker : Leaflet.Marker | null = null;
 
     constructor(private changeDetector: ChangeDetectorRef) 
     {
-        listen<Attitude>('attitude', (event) => { this.attitude = event.payload; this.changeDetector.detectChanges(); });
+        listen<number>('roll', (event) => { console.log(event); this.attitude.roll_deg = event.payload; this.changeDetector.detectChanges(); });
+        listen<number>('pitch', (event) => { this.attitude.pitch_deg = event.payload; this.changeDetector.detectChanges(); });
+        listen<number|null>('ping', (event) => { this.ping_ms = event.payload; this.changeDetector.detectChanges(); });
 
         /*
         setInterval(() => {

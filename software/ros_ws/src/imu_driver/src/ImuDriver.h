@@ -1,6 +1,5 @@
 #include "SerialPort.h"
 
-#include <sensor_msgs/msg/imu.hpp>
 #include <std_msgs/msg/float64.hpp>
 
 #define FRAME_START_BYTE 0x55
@@ -33,7 +32,6 @@ private:
     std::shared_ptr<SerialPort> _serial_port;
     std::vector<uint8_t> _buffer;
 
-    rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr _imu_publisher;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr _roll_publisher;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr _pitch_publisher;
 };

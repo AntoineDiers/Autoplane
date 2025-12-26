@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="imu_driver" exec="imu_driver" name="imu_driver" output="screen">
+        <remap from="~/roll" to="/pose/roll"/>
+        <remap from="~/pitch" to="/pose/pitch"/>
+    </node>
+</launch>

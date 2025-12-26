@@ -50,13 +50,13 @@
 
 .attitude-icon
 {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     padding: 0px;
     border-radius: 100px;
     overflow: hidden;
     filter: invert(80%);
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(153, 35, 189);
 }
 
 .nav-data

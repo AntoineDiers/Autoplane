@@ -1,14 +1,14 @@
 #include "ImuDriver.h"
 
-#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
-
 ImuDriver::ImuDriver() : Node("imu_driver")
 {
-    _imu_publisher = create_publisher<sensor_msgs::msg::Imu>("~/imu", 10);
     _roll_publisher = create_publisher<std_msgs::msg::Float64>("~/roll", 10);
     _pitch_publisher = create_publisher<std_msgs::msg::Float64>("~/pitch", 10);
 
-    _serial_port = std::make_shared<SerialPort>(this, "/dev/ttyUSB0", SerialPort::Baudrate::_9600, [this](const std::vector<uint8_t>& data)
+    std::string serial_port = declare_parameter("serial_port", "/dev/imu");
+    uint32_t baudrate = declare_parameter("baudrate", 38400);
+
+    _serial_port = std::make_shared<SerialPort>(this, serial_port, baudrate, [this](const std::vector<uint8_t>& data)
     {
         onSerialData(data);
     });
@@ -75,24 +75,11 @@ void ImuDriver::parseAttitude(std::vector<uint8_t> &buffer)
         if(angle_y >= PI_DEG) { angle_y -= 2 * PI_DEG; }
         if(angle_z >= PI_DEG) { angle_z -= 2 * PI_DEG; }
 
-        tf2::Quaternion quaternion;
-        quaternion.setEuler(angle_z, angle_y, angle_x);
-
-        sensor_msgs::msg::Imu imu;
-        imu.orientation.x = quaternion.x();
-        imu.orientation.y = quaternion.y();
-        imu.orientation.z = quaternion.z();
-        imu.orientation.w = quaternion.w();
-
-        imu.header.stamp = get_clock()->now();
-
-        _imu_publisher->publish(imu);
-
         std_msgs::msg::Float64 msg;
-        msg.data = angle_x;
+        msg.data = - angle_x;
         _roll_publisher->publish(msg);
 
-        msg.data = angle_y;
+        msg.data = - angle_y;
         _pitch_publisher->publish(msg);
     }
 

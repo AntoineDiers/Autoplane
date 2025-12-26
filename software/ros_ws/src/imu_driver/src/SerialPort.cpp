@@ -10,7 +10,7 @@
 SerialPort::SerialPort(
         const rclcpp::Node* node, 
         const std::filesystem::path& filepath, 
-        const Baudrate& baudrate,
+        const uint32_t& baudrate,
         const DataCallback& data_callback)
     {
         _node = node;
@@ -75,6 +75,7 @@ void SerialPort::open()
     if(tcgetattr(_fd, &config) != 0) 
     {
         RCLCPP_ERROR_STREAM(_node->get_logger(), "Failed to read serial port config " << _filepath.string() << " : " << strerror(errno));
+        _fd = -1;
         return;
     }
 

@@ -6,3 +6,4 @@ Equipments Configuration
 
    imu/index
    raspberry_pi/index
+   user_pc/index

@@ -18,22 +18,35 @@ log()
 
 # -----------------------------------------------------
 
-log "Building docker build image ..."
+log "Installing QEMU ..."
+docker run --privileged --rm tonistiigi/binfmt --install all
+
+# -----------------------------------------------------
+
+log "Building ROS docker build image ..."
 
 cd $SCRIPT_PATH/docker
-docker build -t autoplane-build -f DockerfileBuild .
+docker build --platform linux/arm64/v8 -t autoplane-build-ros -f DockerfileBuildRos .
+
+# -----------------------------------------------------
+
+log "Building HMI docker build image ..."
+
+cd $SCRIPT_PATH/docker
+docker build -t autoplane-build-hmi -f DockerfileBuildHmi .
 
 # -----------------------------------------------------
 
 log "Building autoplane-hmi ..."
 cd $SCRIPT_PATH/autoplane-hmi
-docker run -t --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $PWD:/workspace autoplane-build bash -c "cd /workspace && npm install --legacy-peer-deps && npm run tauri build" 
+docker run -t --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $PWD:/workspace autoplane-build-hmi bash -c "cd /workspace && npm install --legacy-peer-deps && npm run tauri build" 
 
 # -----------------------------------------------------
 
 log "Building ROS workspace ..."
-cd $SCRIPT_PATH/ros_ws
-docker run --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $PWD:/workspace autoplane-build bash -c "cd /workspace && source /opt/ros/jazzy/setup.bash && colcon build" 
+cd $SCRIPT_PATH
+rm -rf ros_ws/build ros_ws/install ros_ws/log
+docker run --rm --platform linux/arm64/v8 -u $(id -u ${USER}):$(id -g ${USER}) -v $PWD:/workspace autoplane-build-ros bash -c "cd /workspace/ros_ws && source /opt/ros/jazzy/setup.bash && colcon build" 
 
 # -----------------------------------------------------
 
@@ -42,15 +55,19 @@ log "Building docker run image ..."
 rm -rf $SCRIPT_PATH/docker/assets/firmware/ros
 cp -r $SCRIPT_PATH/ros_ws/install $SCRIPT_PATH/docker/assets/firmware/ros
 cd $SCRIPT_PATH/docker
-docker build -t autoplane-run -f DockerfileRun .
+docker build --platform linux/arm64/v8 -t autoplane-run -f DockerfileRun .
 
 # -----------------------------------------------------
 
 log "Deploying build results ..."
 
 cd $SCRIPT_PATH/deploy
-rm -f ./*.tar.gz
 rm -f ./*.deb
+rm -f ./*.tar
 
-docker save autoplane-run:latest -o autoplane-run.tar.gz
 cp $SCRIPT_PATH/autoplane-hmi/src-tauri/target/release/bundle/deb/*.deb $SCRIPT_PATH/deploy/
+
+docker save -o autoplane-run.tar autoplane-run
+
+docker tag autoplane-run localhost:5000/autoplane-run
+docker push localhost:5000/autoplane-run

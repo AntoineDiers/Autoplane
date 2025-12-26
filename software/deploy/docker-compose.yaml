@@ -1,6 +1,9 @@
 services:
     autoplane:
+        privileged: true
         image: autoplane-run:latest
         container_name: autoplane
-        network_mode : host
-        entrypoint : /firmware/entrypoint.sh
+        network_mode: host
+        entrypoint: /firmware/entrypoint.sh
+        volumes:
+            - /dev:/dev
