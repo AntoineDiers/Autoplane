@@ -1,0 +1,2297 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Program Files\SimFlow\OpenFOAM-2212\bin\rhoSimpleFoam
+Date   : Dec 30 2025
+Time   : 15:23:36
+Host   : DELL-G--ADI
+PID    : 24904
+I/O    : uncollated
+Case   : C:/Users/antoi/Documents/code/Autoplane/hardware/CFD/SimFlow-Workspace/My_Cases/Autoplane/Autoplane
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding OptimisationSwitches according to controlDict
+    fileHandler (unregistered)
+    fileModificationSkew 0;
+
+    maxMasterFileBufferSize 1e+09;
+
+    maxThreadFileBufferSize 1e+09;
+
+    mpiBufferSize (unregistered)
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 0.0001
+    field h	 tolerance 0.0001
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+Creating MRF zone list from MRFProperties
+Creating finite volume options from "system/fvOptions"
+
+No finite volume options present
+
+Starting time loop
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault:
+    p: p
+    U: U
+    rho: rho
+    Not including porosity effects
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.007819638, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 0.009214235, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.002778211, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 1, Final residual = 0.005073617, No Iterations 1
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.007089473, No Iterations 11
+GAMG:  Solving for p, Initial residual = 0.072323, Final residual = 0.0005546262, No Iterations 4
+time step continuity errors : sum local = 0.08242752, global = 0.0133479, cumulative = 0.0133479
+ExecutionTime = 0.356 s  ClockTime = 0 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-101.5949 0.03883509 4.589047)
+        Pressure : (-101.7582 0.03871627 4.59209)
+        Viscous  : (0.163216 0.0001188159 -0.003043251)
+    Sum of moments
+        Total    : (0.09986987 -2.301606 -0.1766312)
+        Pressure : (0.09999342 -2.303193 -0.1764081)
+        Viscous  : (-0.0001235529 0.001587206 -0.0002230557)
+    writing force and moment files.
+
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.410505, Final residual = 0.001696008, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.4029065, Final residual = 0.001918851, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.407062, Final residual = 0.001886195, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.736046, Final residual = 0.002043098, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.04716819, Final residual = 0.0003320976, No Iterations 7
+GAMG:  Solving for p, Initial residual = 0.02736512, Final residual = 0.0001093303, No Iterations 4
+time step continuity errors : sum local = 0.03091199, global = 0.003333231, cumulative = 0.01668113
+ExecutionTime = 0.571 s  ClockTime = 0 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-69.34087 -0.008771527 27.52732)
+        Pressure : (-69.23755 -0.008969801 27.52245)
+        Viscous  : (-0.1033167 0.0001982743 0.004869723)
+    Sum of moments
+        Total    : (0.3102947 3.427588 -0.2465941)
+        Pressure : (0.3106263 3.425669 -0.2465469)
+        Viscous  : (-0.0003315532 0.001918728 -4.72343e-05)
+    writing force and moment files.
+
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.5298053, Final residual = 0.003095828, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.2681517, Final residual = 0.001064065, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.274355, Final residual = 0.00116379, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.6328325, Final residual = 0.002788936, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.05692994, Final residual = 0.0005230833, No Iterations 6
+GAMG:  Solving for p, Initial residual = 0.07267153, Final residual = 0.0003958248, No Iterations 4
+time step continuity errors : sum local = 0.02710024, global = -0.0005519413, cumulative = 0.01612919
+ExecutionTime = 0.771 s  ClockTime = 1 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-25.82353 -0.07091785 54.04864)
+        Pressure : (-25.66021 -0.07151105 54.0423)
+        Viscous  : (-0.1633161 0.0005932075 0.006330568)
+    Sum of moments
+        Total    : (0.9709295 10.07043 -0.1920246)
+        Pressure : (0.9717461 10.06848 -0.1924667)
+        Viscous  : (-0.0008166056 0.00194596 0.0004421197)
+    writing force and moment files.
+
+Time = 4
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.27777, Final residual = 0.002033891, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.3735214, Final residual = 0.001365433, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.391145, Final residual = 0.0007089687, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.3964848, Final residual = 0.003630659, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.2100138, Final residual = 0.001775582, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.02248579, Final residual = 0.000120787, No Iterations 4
+time step continuity errors : sum local = 0.01100008, global = 0.001628785, cumulative = 0.01775797
+ExecutionTime = 0.97 s  ClockTime = 1 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-13.26422 0.01899721 42.51488)
+        Pressure : (-13.10688 0.01841123 42.51485)
+        Viscous  : (-0.15734 0.0005859825 3.673883e-05)
+    Sum of moments
+        Total    : (-0.1324607 8.129403 -0.06000562)
+        Pressure : (-0.1319401 8.12757 -0.06007996)
+        Viscous  : (-0.0005205545 0.001833031 7.433982e-05)
+    writing force and moment files.
+
+Time = 5
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.3551155, Final residual = 0.0002447677, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.3097962, Final residual = 0.000846495, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.3063001, Final residual = 0.0004520164, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.260418, Final residual = 0.001172274, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.1650484, Final residual = 0.001355687, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0156657, Final residual = 9.171264e-05, No Iterations 4
+time step continuity errors : sum local = 0.004625971, global = -0.00113211, cumulative = 0.01662586
+ExecutionTime = 1.166 s  ClockTime = 1 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-16.05172 0.04763121 25.97548)
+        Pressure : (-15.89542 0.04708371 25.98148)
+        Viscous  : (-0.1563023 0.0005475044 -0.005999741)
+    Sum of moments
+        Total    : (-0.9567645 5.166441 0.01012706)
+        Pressure : (-0.9565927 5.165585 0.01013145)
+        Viscous  : (-0.0001717578 0.0008556125 -4.388839e-06)
+    writing force and moment files.
+
+Time = 6
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.3309182, Final residual = 0.002959204, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.2181517, Final residual = 0.001815713, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.2040622, Final residual = 0.000491383, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1959522, Final residual = 0.0009605386, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.1665868, Final residual = 0.0007392406, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.03779556, Final residual = 0.0003648276, No Iterations 3
+time step continuity errors : sum local = 0.006984733, global = -4.559517e-05, cumulative = 0.01658027
+ExecutionTime = 1.366 s  ClockTime = 1 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-21.54605 -0.03766026 18.86674)
+        Pressure : (-21.38352 -0.03781036 18.87559)
+        Viscous  : (-0.1625258 0.0001501018 -0.008855873)
+    Sum of moments
+        Total    : (-0.8179856 4.004756 0.09700596)
+        Pressure : (-0.8180358 4.004364 0.09646109)
+        Viscous  : (5.020183e-05 0.0003918007 0.0005448703)
+    writing force and moment files.
+
+Time = 7
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.2408634, Final residual = 0.0007675676, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1850161, Final residual = 0.0004814423, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.1775958, Final residual = 0.0005220762, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1807733, Final residual = 0.001350286, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.300855, Final residual = 0.002407881, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.02265337, Final residual = 0.0001454928, No Iterations 4
+time step continuity errors : sum local = 0.003440991, global = -0.0007885303, cumulative = 0.01579174
+ExecutionTime = 1.567 s  ClockTime = 1 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-24.62771 -0.1691336 18.42722)
+        Pressure : (-24.45169 -0.1689575 18.43644)
+        Viscous  : (-0.1760131 -0.0001760882 -0.009220533)
+    Sum of moments
+        Total    : (-0.3299089 3.558075 0.1825914)
+        Pressure : (-0.3299774 3.558154 0.1817023)
+        Viscous  : (6.851038e-05 -7.902506e-05 0.0008890647)
+    writing force and moment files.
+
+Time = 8
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1934892, Final residual = 0.001453714, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.2059026, Final residual = 0.002022735, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.2185881, Final residual = 0.0004710773, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1864329, Final residual = 0.0009941496, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.2558116, Final residual = 0.001577107, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.01886182, Final residual = 0.0001071347, No Iterations 4
+time step continuity errors : sum local = 0.002064325, global = -0.0004877334, cumulative = 0.015304
+ExecutionTime = 1.758 s  ClockTime = 2 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-24.82309 -0.2575461 20.34644)
+        Pressure : (-24.63218 -0.2570412 20.35481)
+        Viscous  : (-0.1909125 -0.0005049257 -0.008376416)
+    Sum of moments
+        Total    : (0.07435851 2.834895 0.2194404)
+        Pressure : (0.07429338 2.835363 0.2183776)
+        Viscous  : (6.512197e-05 -0.0004686851 0.001062856)
+    writing force and moment files.
+
+Time = 9
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1709746, Final residual = 0.001259527, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.2069657, Final residual = 0.001461155, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.2125076, Final residual = 0.0004132452, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1828349, Final residual = 0.0008784683, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.2198221, Final residual = 0.001226903, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.02085998, Final residual = 0.0001040679, No Iterations 4
+time step continuity errors : sum local = 0.001413601, global = -0.0001321347, cumulative = 0.01517187
+ExecutionTime = 1.947 s  ClockTime = 2 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-23.47348 -0.2912642 22.23359)
+        Pressure : (-23.26819 -0.2904832 22.24098)
+        Viscous  : (-0.2052854 -0.0007809659 -0.007395914)
+    Sum of moments
+        Total    : (0.2630227 1.757486 0.2018489)
+        Pressure : (0.262975 1.758499 0.2010689)
+        Viscous  : (4.772369e-05 -0.001013767 0.0007800876)
+    writing force and moment files.
+
+Time = 10
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1633004, Final residual = 0.001168395, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1767017, Final residual = 0.0009076739, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.1619612, Final residual = 0.0003064742, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.166401, Final residual = 0.0007826953, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.2390911, Final residual = 0.001379372, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0160837, Final residual = 8.80135e-05, No Iterations 4
+time step continuity errors : sum local = 0.001228038, global = -9.856745e-05, cumulative = 0.0150733
+ExecutionTime = 2.145 s  ClockTime = 2 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-21.77102 -0.2784678 23.41925)
+        Pressure : (-21.55274 -0.2775294 23.42647)
+        Viscous  : (-0.2182796 -0.0009384017 -0.007213828)
+    Sum of moments
+        Total    : (0.3279679 0.5566197 0.1497294)
+        Pressure : (0.3279444 0.5583525 0.149246)
+        Viscous  : (2.354343e-05 -0.001732836 0.0004834297)
+    writing force and moment files.
+
+Time = 11
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1578604, Final residual = 0.001146643, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1389693, Final residual = 0.0006139681, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.1145363, Final residual = 0.0002085735, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1476645, Final residual = 0.0007561793, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.240549, Final residual = 0.001080983, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.01303716, Final residual = 6.796052e-05, No Iterations 4
+time step continuity errors : sum local = 0.0009163181, global = -6.371244e-05, cumulative = 0.01500959
+ExecutionTime = 2.338 s  ClockTime = 2 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-20.35131 -0.2434006 24.12435)
+        Pressure : (-20.12131 -0.242428 24.13187)
+        Viscous  : (-0.2299973 -0.0009726251 -0.007518237)
+    Sum of moments
+        Total    : (0.3356153 -0.4896573 0.08177103)
+        Pressure : (0.335633 -0.4870598 0.08166071)
+        Viscous  : (-1.768967e-05 -0.002597437 0.0001103154)
+    writing force and moment files.
+
+Time = 12
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.15134, Final residual = 0.001172352, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1156257, Final residual = 0.0005128197, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0927893, Final residual = 0.0002233201, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1316828, Final residual = 0.0007748039, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.2131938, Final residual = 0.0008504826, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0114217, Final residual = 6.132088e-05, No Iterations 4
+time step continuity errors : sum local = 0.0007597588, global = 1.176052e-06, cumulative = 0.01501076
+ExecutionTime = 2.534 s  ClockTime = 2 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.46106 -0.1963487 25.00448)
+        Pressure : (-19.22061 -0.1955394 25.01277)
+        Viscous  : (-0.2404454 -0.0008093216 -0.008295825)
+    Sum of moments
+        Total    : (0.3224684 -1.183274 0.009873963)
+        Pressure : (0.3224762 -1.179862 0.0101484)
+        Viscous  : (-7.78525e-06 -0.003412659 -0.0002744401)
+    writing force and moment files.
+
+Time = 13
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1415366, Final residual = 0.001210652, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1120871, Final residual = 0.0004782372, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.09070417, Final residual = 0.000826809, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1204217, Final residual = 0.0008024584, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.1902749, Final residual = 0.0006737387, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.01044659, Final residual = 4.856598e-05, No Iterations 4
+time step continuity errors : sum local = 0.0005474797, global = -5.023468e-05, cumulative = 0.01496053
+ExecutionTime = 2.726 s  ClockTime = 2 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.98215 -0.1531787 26.32619)
+        Pressure : (-18.73254 -0.1525117 26.33526)
+        Viscous  : (-0.2496108 -0.0006670134 -0.009064331)
+    Sum of moments
+        Total    : (0.3112277 -1.490127 -0.04916055)
+        Pressure : (0.3112497 -1.485883 -0.04862181)
+        Viscous  : (-2.198385e-05 -0.004244408 -0.0005387424)
+    writing force and moment files.
+
+Time = 14
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1302698, Final residual = 0.001259788, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1125905, Final residual = 0.0004471052, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.08841677, Final residual = 0.0005490874, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1103303, Final residual = 0.0008103522, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.1727694, Final residual = 0.0006460665, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.009408447, Final residual = 4.415564e-05, No Iterations 4
+time step continuity errors : sum local = 0.0004641312, global = -4.043062e-05, cumulative = 0.0149201
+ExecutionTime = 2.911 s  ClockTime = 3 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.81862 -0.1080109 28.29345)
+        Pressure : (-18.56072 -0.1076932 28.30347)
+        Viscous  : (-0.2578981 -0.0003177297 -0.01001377)
+    Sum of moments
+        Total    : (0.3092823 -1.467091 -0.0917892)
+        Pressure : (0.3092766 -1.462205 -0.09101014)
+        Viscous  : (5.784321e-06 -0.004885463 -0.0007790576)
+    writing force and moment files.
+
+Time = 15
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1215479, Final residual = 0.0003674156, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1059624, Final residual = 0.000404975, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.07865786, Final residual = 0.0003378198, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.1014347, Final residual = 0.0008301021, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.153657, Final residual = 0.0006254476, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.008214806, Final residual = 4.161163e-05, No Iterations 4
+time step continuity errors : sum local = 0.0004244211, global = -3.819625e-05, cumulative = 0.0148819
+ExecutionTime = 3.104 s  ClockTime = 3 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.77966 -0.07834922 30.72885)
+        Pressure : (-18.51467 -0.07825737 30.73952)
+        Viscous  : (-0.264995 -9.184429e-05 -0.01066897)
+    Sum of moments
+        Total    : (0.3096285 -1.230062 -0.1190452)
+        Pressure : (0.3096124 -1.224614 -0.1180912)
+        Viscous  : (1.612197e-05 -0.005447557 -0.0009539383)
+    writing force and moment files.
+
+Time = 16
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1157539, Final residual = 0.0003708007, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.09334706, Final residual = 0.0003606931, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.06526772, Final residual = 0.0002483222, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.09347393, Final residual = 0.0008020223, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.132811, Final residual = 0.0005467802, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.007061279, Final residual = 3.654127e-05, No Iterations 4
+time step continuity errors : sum local = 0.0003644783, global = -9.261328e-06, cumulative = 0.01487264
+ExecutionTime = 3.296 s  ClockTime = 3 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.82032 -0.06210642 33.45276)
+        Pressure : (-18.54904 -0.06220015 33.46417)
+        Viscous  : (-0.2712795 9.373367e-05 -0.01141794)
+    Sum of moments
+        Total    : (0.3246026 -0.930851 -0.1296089)
+        Pressure : (0.3245614 -0.9249499 -0.1284505)
+        Viscous  : (4.127983e-05 -0.005901166 -0.001158448)
+    writing force and moment files.
+
+Time = 17
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1091775, Final residual = 0.0003644739, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0789976, Final residual = 0.0003084291, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.05204329, Final residual = 0.0002022253, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.08810058, Final residual = 0.0007767313, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.1134776, Final residual = 0.0004748301, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.005959166, Final residual = 3.518942e-05, No Iterations 4
+time step continuity errors : sum local = 0.0003470343, global = -2.496453e-05, cumulative = 0.01484768
+ExecutionTime = 3.488 s  ClockTime = 3 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.82868 -0.05882865 36.16295)
+        Pressure : (-18.55222 -0.05902158 36.17482)
+        Viscous  : (-0.2764527 0.000192931 -0.01186547)
+    Sum of moments
+        Total    : (0.3447074 -0.685992 -0.1277744)
+        Pressure : (0.3446515 -0.6796485 -0.1264191)
+        Viscous  : (5.593696e-05 -0.006343501 -0.001355319)
+    writing force and moment files.
+
+Time = 18
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1009059, Final residual = 0.0003379767, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06677762, Final residual = 0.0002666765, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.04188701, Final residual = 0.0001734845, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.08509877, Final residual = 0.0007277575, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.09680071, Final residual = 0.0004049027, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.005035192, Final residual = 3.123184e-05, No Iterations 4
+time step continuity errors : sum local = 0.0003035376, global = -2.008281e-05, cumulative = 0.01482759
+ExecutionTime = 3.684 s  ClockTime = 3 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.84927 -0.06103316 38.77835)
+        Pressure : (-18.56864 -0.06132355 38.79081)
+        Viscous  : (-0.2806338 0.0002903821 -0.01245707)
+    Sum of moments
+        Total    : (0.3643665 -0.5478007 -0.1198854)
+        Pressure : (0.364296 -0.5411292 -0.118407)
+        Viscous  : (7.051294e-05 -0.006671539 -0.001478398)
+    writing force and moment files.
+
+Time = 19
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.09093942, Final residual = 0.0002981528, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.05936238, Final residual = 0.0002359884, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.03513926, Final residual = 0.0001591394, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.08177261, Final residual = 0.0006614926, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.08279958, Final residual = 0.0008018128, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.00451357, Final residual = 3.880777e-05, No Iterations 4
+time step continuity errors : sum local = 0.0003705033, global = 2.522414e-05, cumulative = 0.01485282
+ExecutionTime = 3.874 s  ClockTime = 4 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.81989 -0.06806414 41.11762)
+        Pressure : (-18.53651 -0.06842419 41.13035)
+        Viscous  : (-0.283382 0.000360049 -0.01273146)
+    Sum of moments
+        Total    : (0.3850671 -0.5241323 -0.1087779)
+        Pressure : (0.3849943 -0.517166 -0.1072407)
+        Viscous  : (7.278277e-05 -0.006966294 -0.001537226)
+    writing force and moment files.
+
+Time = 20
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.07992739, Final residual = 0.000257396, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.05443943, Final residual = 0.0002097928, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.03063233, Final residual = 0.0001441172, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.07786057, Final residual = 0.0006010762, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0711194, Final residual = 0.0006827901, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003970289, Final residual = 3.825308e-05, No Iterations 4
+time step continuity errors : sum local = 0.000357481, global = 1.564055e-05, cumulative = 0.01486846
+ExecutionTime = 4.071 s  ClockTime = 4 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.81091 -0.07705598 43.2453)
+        Pressure : (-18.52587 -0.07746101 43.25843)
+        Viscous  : (-0.2850397 0.0004050336 -0.0131242)
+    Sum of moments
+        Total    : (0.4096199 -0.6012987 -0.09678319)
+        Pressure : (0.4095428 -0.5941081 -0.09522019)
+        Viscous  : (7.705668e-05 -0.007190663 -0.001563001)
+    writing force and moment files.
+
+Time = 21
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.06919718, Final residual = 0.0002252386, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.04976176, Final residual = 0.000187245, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.02701675, Final residual = 0.0001302998, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0712526, Final residual = 0.000538203, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.06154347, Final residual = 0.0005977226, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003546813, Final residual = 3.40372e-05, No Iterations 4
+time step continuity errors : sum local = 0.0003116363, global = -4.224085e-06, cumulative = 0.01486423
+ExecutionTime = 4.263 s  ClockTime = 4 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.77373 -0.08750879 45.11539)
+        Pressure : (-18.48784 -0.08791625 45.12867)
+        Viscous  : (-0.2858881 0.0004074614 -0.01328036)
+    Sum of moments
+        Total    : (0.4166751 -0.7501075 -0.09199485)
+        Pressure : (0.4166009 -0.7426498 -0.09042206)
+        Viscous  : (7.4173e-05 -0.007457733 -0.001572799)
+    writing force and moment files.
+
+Time = 22
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.059822, Final residual = 0.0002019797, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.04489729, Final residual = 0.0001674657, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.02398185, Final residual = 0.000118534, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.06277434, Final residual = 0.0004700184, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.05345918, Final residual = 0.0005207308, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003196802, Final residual = 2.892517e-05, No Iterations 4
+time step continuity errors : sum local = 0.0002589943, global = -2.350838e-06, cumulative = 0.01486188
+ExecutionTime = 4.451 s  ClockTime = 4 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.76884 -0.1023027 46.79051)
+        Pressure : (-18.48269 -0.102705 46.80408)
+        Viscous  : (-0.2861465 0.0004022823 -0.01357437)
+    Sum of moments
+        Total    : (0.4504993 -0.9519299 -0.08056298)
+        Pressure : (0.4504329 -0.9442662 -0.07904023)
+        Viscous  : (6.637381e-05 -0.007663709 -0.001522758)
+    writing force and moment files.
+
+Time = 23
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0521008, Final residual = 0.0001834508, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.04013502, Final residual = 0.000150907, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.02110362, Final residual = 0.0001111945, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.05484876, Final residual = 0.000409318, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.04674562, Final residual = 0.0004342751, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.002831101, Final residual = 2.422945e-05, No Iterations 4
+time step continuity errors : sum local = 0.0002124906, global = -3.183789e-06, cumulative = 0.0148587
+ExecutionTime = 4.631 s  ClockTime = 4 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.73118 -0.1187664 48.20023)
+        Pressure : (-18.44507 -0.1191446 48.21388)
+        Viscous  : (-0.2861129 0.0003781881 -0.01365344)
+    Sum of moments
+        Total    : (0.4794295 -1.168119 -0.06716717)
+        Pressure : (0.4793751 -1.160174 -0.06570459)
+        Viscous  : (5.435227e-05 -0.007944983 -0.001462576)
+    writing force and moment files.
+
+Time = 24
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.04538369, Final residual = 0.000166484, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.03570496, Final residual = 0.0001378146, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01864456, Final residual = 0.000104121, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.04801515, Final residual = 0.0003571459, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.04078566, Final residual = 0.0003744091, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.002550793, Final residual = 2.198299e-05, No Iterations 4
+time step continuity errors : sum local = 0.0001891172, global = -7.037265e-06, cumulative = 0.01485166
+ExecutionTime = 4.811 s  ClockTime = 5 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.73378 -0.1327903 49.48593)
+        Pressure : (-18.44797 -0.1331396 49.4998)
+        Viscous  : (-0.2858071 0.0003492902 -0.01387526)
+    Sum of moments
+        Total    : (0.4968291 -1.389395 -0.05881743)
+        Pressure : (0.4967798 -1.381242 -0.05742926)
+        Viscous  : (4.926497e-05 -0.008152847 -0.001388161)
+    writing force and moment files.
+
+Time = 25
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.03950138, Final residual = 0.0001497464, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.03175991, Final residual = 0.0001245243, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01643346, Final residual = 9.700743e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0422324, Final residual = 0.0003145127, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.03584803, Final residual = 0.0003202659, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.002282911, Final residual = 2.005187e-05, No Iterations 4
+time step continuity errors : sum local = 0.0001702415, global = -1.089676e-05, cumulative = 0.01484077
+ExecutionTime = 4.996 s  ClockTime = 5 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.70736 -0.1444376 50.5668)
+        Pressure : (-18.42204 -0.1447452 50.58068)
+        Viscous  : (-0.2853206 0.0003075745 -0.01387712)
+    Sum of moments
+        Total    : (0.5178698 -1.577098 -0.04963986)
+        Pressure : (0.5178384 -1.56866 -0.04829315)
+        Viscous  : (3.135552e-05 -0.008438047 -0.001346717)
+    writing force and moment files.
+
+Time = 26
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.03445537, Final residual = 0.0001323058, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02831922, Final residual = 0.0001121768, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01466264, Final residual = 8.798104e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.03746044, Final residual = 0.0002874409, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.03091776, Final residual = 0.0002837117, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.00200261, Final residual = 1.862793e-05, No Iterations 4
+time step continuity errors : sum local = 0.0001561088, global = -8.975941e-06, cumulative = 0.01483179
+ExecutionTime = 5.188 s  ClockTime = 5 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.71819 -0.1520761 51.56214)
+        Pressure : (-18.43317 -0.1523894 51.57623)
+        Viscous  : (-0.2850179 0.000313295 -0.01409662)
+    Sum of moments
+        Total    : (0.5388368 -1.725741 -0.04127534)
+        Pressure : (0.5388204 -1.717188 -0.04007603)
+        Viscous  : (1.635197e-05 -0.008553005 -0.001199308)
+    writing force and moment files.
+
+Time = 27
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.02987348, Final residual = 0.0001165855, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02511124, Final residual = 0.0001002074, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01299741, Final residual = 7.898343e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.03338497, Final residual = 0.0002672343, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.02711072, Final residual = 0.0002467575, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001745517, Final residual = 1.697675e-05, No Iterations 4
+time step continuity errors : sum local = 0.0001411037, global = -6.751093e-06, cumulative = 0.01482504
+ExecutionTime = 5.369 s  ClockTime = 5 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.70521 -0.1605835 52.40928)
+        Pressure : (-18.42059 -0.1608457 52.42329)
+        Viscous  : (-0.2846121 0.0002622572 -0.01401122)
+    Sum of moments
+        Total    : (0.5492889 -1.8121 -0.03242453)
+        Pressure : (0.5492815 -1.803392 -0.03133652)
+        Viscous  : (7.420584e-06 -0.008707935 -0.001088015)
+    writing force and moment files.
+
+Time = 28
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.02582092, Final residual = 0.00010102, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02227964, Final residual = 8.815346e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01160154, Final residual = 6.832336e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.02993053, Final residual = 0.000246302, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.02347721, Final residual = 0.0002202012, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001555017, Final residual = 1.54203e-05, No Iterations 4
+time step continuity errors : sum local = 0.000127071, global = -3.33148e-06, cumulative = 0.01482171
+ExecutionTime = 5.555 s  ClockTime = 5 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.73466 -0.1664545 53.22713)
+        Pressure : (-18.45045 -0.1666919 53.24128)
+        Viscous  : (-0.2842081 0.0002374614 -0.01414906)
+    Sum of moments
+        Total    : (0.5558769 -1.838456 -0.02826224)
+        Pressure : (0.5558785 -1.829639 -0.02724973)
+        Viscous  : (-1.617998e-06 -0.008817467 -0.001012507)
+    writing force and moment files.
+
+Time = 29
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.02230854, Final residual = 8.728214e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01971355, Final residual = 7.685345e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0102456, Final residual = 5.868776e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0268753, Final residual = 0.0002189423, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0204931, Final residual = 0.0001883059, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.00133652, Final residual = 1.318751e-05, No Iterations 4
+time step continuity errors : sum local = 0.0001080307, global = -1.206062e-06, cumulative = 0.0148205
+ExecutionTime = 5.742 s  ClockTime = 6 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.73588 -0.1718936 53.9127)
+        Pressure : (-18.45199 -0.1721079 53.92679)
+        Viscous  : (-0.2838819 0.0002142807 -0.0140892)
+    Sum of moments
+        Total    : (0.5626808 -1.80391 -0.02354665)
+        Pressure : (0.5627029 -1.795 -0.02262831)
+        Viscous  : (-2.209997e-05 -0.008909563 -0.0009183396)
+    writing force and moment files.
+
+Time = 30
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01936395, Final residual = 7.507016e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01740146, Final residual = 6.6284e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.009079116, Final residual = 4.911702e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.02411705, Final residual = 0.000191357, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.01767533, Final residual = 0.0001669514, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.00118699, Final residual = 1.151678e-05, No Iterations 4
+time step continuity errors : sum local = 9.36729e-05, global = -1.705769e-07, cumulative = 0.01482033
+ExecutionTime = 5.936 s  ClockTime = 6 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.77157 -0.1741124 54.57114)
+        Pressure : (-18.48794 -0.1743241 54.58533)
+        Viscous  : (-0.2836346 0.0002116757 -0.01419069)
+    Sum of moments
+        Total    : (0.5668327 -1.72589 -0.0220086)
+        Pressure : (0.5668557 -1.716952 -0.02117545)
+        Viscous  : (-2.306068e-05 -0.008938531 -0.0008331496)
+    writing force and moment files.
+
+Time = 31
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01679139, Final residual = 6.437204e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01529777, Final residual = 5.691637e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.007931477, Final residual = 4.103708e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.02147514, Final residual = 0.0001643945, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.01565419, Final residual = 0.0001437496, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001040149, Final residual = 9.965491e-06, No Iterations 4
+time step continuity errors : sum local = 8.06635e-05, global = -2.646059e-07, cumulative = 0.01482007
+ExecutionTime = 6.125 s  ClockTime = 6 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.77961 -0.1792722 55.13041)
+        Pressure : (-18.49626 -0.179462 55.14451)
+        Viscous  : (-0.2833562 0.0001898165 -0.01409764)
+    Sum of moments
+        Total    : (0.5781031 -1.610402 -0.01737568)
+        Pressure : (0.5781519 -1.601427 -0.01662082)
+        Viscous  : (-4.882179e-05 -0.008975109 -0.0007548631)
+    writing force and moment files.
+
+Time = 32
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01464828, Final residual = 5.481953e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01343436, Final residual = 4.833089e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.006978559, Final residual = 3.408721e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.01904052, Final residual = 0.0001422128, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0135119, Final residual = 0.0001293725, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000930245, Final residual = 9.008856e-06, No Iterations 4
+time step continuity errors : sum local = 7.246791e-05, global = 3.432979e-08, cumulative = 0.0148201
+ExecutionTime = 6.312 s  ClockTime = 6 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.82425 -0.1803897 55.68434)
+        Pressure : (-18.54107 -0.1805686 55.69851)
+        Viscous  : (-0.2831728 0.000178885 -0.01417772)
+    Sum of moments
+        Total    : (0.5667845 -1.469356 -0.02165867)
+        Pressure : (0.5668328 -1.460379 -0.02095292)
+        Viscous  : (-4.832216e-05 -0.008976499 -0.0007057512)
+    writing force and moment files.
+
+Time = 33
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01271955, Final residual = 4.69802e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01170617, Final residual = 4.182759e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.006032377, Final residual = 2.855616e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.01672718, Final residual = 0.0001216275, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.01182766, Final residual = 0.00010949, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0008061458, Final residual = 7.570143e-06, No Iterations 4
+time step continuity errors : sum local = 6.061487e-05, global = -4.806691e-07, cumulative = 0.01481962
+ExecutionTime = 6.496 s  ClockTime = 6 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.83674 -0.1850801 56.13726)
+        Pressure : (-18.55377 -0.1852369 56.15136)
+        Viscous  : (-0.2829716 0.0001567545 -0.01410207)
+    Sum of moments
+        Total    : (0.5719849 -1.311036 -0.02006049)
+        Pressure : (0.5720452 -1.302025 -0.01939158)
+        Viscous  : (-6.030928e-05 -0.009011366 -0.0006689046)
+    writing force and moment files.
+
+Time = 34
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01101133, Final residual = 3.992065e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01017761, Final residual = 3.588085e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.005247462, Final residual = 2.371006e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.01465441, Final residual = 0.0001052389, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.01015152, Final residual = 9.636263e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007138275, Final residual = 6.650972e-06, No Iterations 4
+time step continuity errors : sum local = 5.300723e-05, global = 1.000585e-06, cumulative = 0.01482062
+ExecutionTime = 6.676 s  ClockTime = 6 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.87094 -0.1881491 56.55915)
+        Pressure : (-18.5881 -0.1883113 56.57331)
+        Viscous  : (-0.2828396 0.0001622106 -0.01415931)
+    Sum of moments
+        Total    : (0.5791454 -1.153617 -0.01978985)
+        Pressure : (0.5792061 -1.144615 -0.01915068)
+        Viscous  : (-6.065745e-05 -0.009002257 -0.000639171)
+    writing force and moment files.
+
+Time = 35
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.009479733, Final residual = 3.34369e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.008807417, Final residual = 3.093236e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.004514307, Final residual = 1.993414e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.01275936, Final residual = 9.128998e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.008974218, Final residual = 8.244989e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006353577, Final residual = 5.622597e-06, No Iterations 4
+time step continuity errors : sum local = 4.468187e-05, global = -1.176239e-07, cumulative = 0.0148205
+ExecutionTime = 6.854 s  ClockTime = 7 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.88067 -0.1918441 56.9111)
+        Pressure : (-18.59801 -0.1919822 56.92516)
+        Viscous  : (-0.2826586 0.000138072 -0.01405753)
+    Sum of moments
+        Total    : (0.5810974 -0.9958809 -0.02078399)
+        Pressure : (0.5811688 -0.9868685 -0.02016416)
+        Viscous  : (-7.143423e-05 -0.009012476 -0.000619831)
+    writing force and moment files.
+
+Time = 36
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.008199685, Final residual = 2.838014e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.007624391, Final residual = 2.584549e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.003919836, Final residual = 1.65187e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.01111499, Final residual = 8.017597e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.007790915, Final residual = 7.342165e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005996961, Final residual = 5.119786e-06, No Iterations 4
+time step continuity errors : sum local = 4.056214e-05, global = 5.763643e-07, cumulative = 0.01482108
+ExecutionTime = 7.033 s  ClockTime = 7 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.90908 -0.1928664 57.24704)
+        Pressure : (-18.6266 -0.1929917 57.26112)
+        Viscous  : (-0.2824873 0.0001253459 -0.01407909)
+    Sum of moments
+        Total    : (0.5893736 -0.8429268 -0.02149843)
+        Pressure : (0.5894432 -0.8338893 -0.02086337)
+        Viscous  : (-6.957671e-05 -0.009037484 -0.0006350583)
+    writing force and moment files.
+
+Time = 37
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.007128176, Final residual = 2.055788e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.006625575, Final residual = 1.992696e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.003380657, Final residual = 1.443257e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.009680884, Final residual = 6.895314e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.006803162, Final residual = 6.280526e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005018916, Final residual = 4.308885e-06, No Iterations 4
+time step continuity errors : sum local = 3.403743e-05, global = -1.267306e-06, cumulative = 0.01481981
+ExecutionTime = 7.214 s  ClockTime = 7 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.91737 -0.1912481 57.52267)
+        Pressure : (-18.63492 -0.1914054 57.53673)
+        Viscous  : (-0.2824475 0.0001572713 -0.01406021)
+    Sum of moments
+        Total    : (0.5864362 -0.7002433 -0.02461362)
+        Pressure : (0.586517 -0.6912256 -0.02401267)
+        Viscous  : (-8.072502e-05 -0.009017758 -0.0006009508)
+    writing force and moment files.
+
+Time = 38
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.006143203, Final residual = 2.026016e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00567981, Final residual = 1.954447e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002911163, Final residual = 1.17992e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.00842237, Final residual = 6.055907e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0058257, Final residual = 5.276705e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0004299842, Final residual = 3.696011e-06, No Iterations 4
+time step continuity errors : sum local = 2.913697e-05, global = -7.485726e-07, cumulative = 0.01481906
+ExecutionTime = 7.404 s  ClockTime = 7 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.93879 -0.1893205 57.77348)
+        Pressure : (-18.65636 -0.1894859 57.78756)
+        Viscous  : (-0.282428 0.0001654247 -0.01407535)
+    Sum of moments
+        Total    : (0.5948681 -0.5695244 -0.02525083)
+        Pressure : (0.5949412 -0.560531 -0.02467277)
+        Viscous  : (-7.310864e-05 -0.008993324 -0.0005780631)
+    writing force and moment files.
+
+Time = 39
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.005289743, Final residual = 1.713553e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00486018, Final residual = 1.678794e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002482297, Final residual = 1.014864e-05, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.007303559, Final residual = 5.31543e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.005214199, Final residual = 4.858735e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0003922622, Final residual = 3.4668e-06, No Iterations 4
+time step continuity errors : sum local = 2.729115e-05, global = -2.081209e-06, cumulative = 0.01481698
+ExecutionTime = 7.592 s  ClockTime = 7 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.94227 -0.1883464 57.9847)
+        Pressure : (-18.65993 -0.1884996 57.99871)
+        Viscous  : (-0.2823374 0.0001532536 -0.01401712)
+    Sum of moments
+        Total    : (0.5964589 -0.4460512 -0.02609619)
+        Pressure : (0.5965388 -0.4370378 -0.02551363)
+        Viscous  : (-7.99356e-05 -0.009013363 -0.000582559)
+    writing force and moment files.
+
+Time = 40
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.004595202, Final residual = 1.493029e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00419536, Final residual = 1.395017e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002157563, Final residual = 8.558923e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.006365866, Final residual = 4.602703e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.004443364, Final residual = 4.094138e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0003446857, Final residual = 3.103836e-06, No Iterations 4
+time step continuity errors : sum local = 2.440621e-05, global = -1.608401e-06, cumulative = 0.01481537
+ExecutionTime = 7.791 s  ClockTime = 8 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.96071 -0.1873345 58.18648)
+        Pressure : (-18.67837 -0.187504 58.20053)
+        Viscous  : (-0.2823403 0.0001694714 -0.01405653)
+    Sum of moments
+        Total    : (0.6030316 -0.3404366 -0.02616424)
+        Pressure : (0.6031091 -0.3314459 -0.02559495)
+        Viscous  : (-7.744333e-05 -0.008990734 -0.00056929)
+    writing force and moment files.
+
+Time = 41
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.003960865, Final residual = 1.277112e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.003612987, Final residual = 1.217048e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001847538, Final residual = 7.389904e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.005533157, Final residual = 3.968979e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.003988448, Final residual = 3.854046e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0003034801, Final residual = 2.99855e-06, No Iterations 4
+time step continuity errors : sum local = 2.356383e-05, global = -1.59992e-06, cumulative = 0.01481377
+ExecutionTime = 7.971 s  ClockTime = 8 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.96481 -0.1866655 58.34694)
+        Pressure : (-18.6825 -0.1868252 58.36093)
+        Viscous  : (-0.2823106 0.0001597342 -0.01399399)
+    Sum of moments
+        Total    : (0.6017102 -0.2395606 -0.02689998)
+        Pressure : (0.6017913 -0.2305663 -0.02633889)
+        Viscous  : (-8.117355e-05 -0.008994307 -0.0005610914)
+    writing force and moment files.
+
+Time = 42
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.003415495, Final residual = 1.139355e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.003105224, Final residual = 1.016576e-05, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001601232, Final residual = 6.405537e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.004814013, Final residual = 3.39763e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.003444541, Final residual = 3.123602e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0002705853, Final residual = 2.592838e-06, No Iterations 4
+time step continuity errors : sum local = 2.036773e-05, global = -9.824158e-07, cumulative = 0.01481279
+ExecutionTime = 8.149 s  ClockTime = 8 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.9745 -0.185426 58.48487)
+        Pressure : (-18.69218 -0.1856074 58.49891)
+        Viscous  : (-0.2823233 0.0001814355 -0.01404236)
+    Sum of moments
+        Total    : (0.6039756 -0.1548229 -0.02747945)
+        Pressure : (0.6040564 -0.1458529 -0.02693271)
+        Viscous  : (-8.078065e-05 -0.008969937 -0.0005467405)
+    writing force and moment files.
+
+Time = 43
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002954984, Final residual = 9.76193e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002679966, Final residual = 8.201079e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001374325, Final residual = 5.613711e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.004184415, Final residual = 2.926569e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.003088729, Final residual = 1.468439e-05, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002463997, Final residual = 1.766105e-06, No Iterations 4
+time step continuity errors : sum local = 1.386822e-05, global = -1.940952e-07, cumulative = 0.0148126
+ExecutionTime = 8.338 s  ClockTime = 8 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.98264 -0.1864858 58.62894)
+        Pressure : (-18.70032 -0.1866666 58.64295)
+        Viscous  : (-0.2823235 0.0001807623 -0.01401036)
+    Sum of moments
+        Total    : (0.6034867 -0.07065605 -0.02828001)
+        Pressure : (0.6035711 -0.06167951 -0.02773839)
+        Viscous  : (-8.437561e-05 -0.008976541 -0.0005416202)
+    writing force and moment files.
+
+Time = 44
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002554339, Final residual = 8.89802e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002325283, Final residual = 6.848963e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001203326, Final residual = 4.910403e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.003632749, Final residual = 2.512137e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.002681561, Final residual = 2.378537e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0002169574, Final residual = 2.161413e-06, No Iterations 4
+time step continuity errors : sum local = 1.697398e-05, global = 4.33767e-07, cumulative = 0.01481303
+ExecutionTime = 8.526 s  ClockTime = 8 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.98868 -0.1870175 58.7244)
+        Pressure : (-18.70636 -0.1872056 58.73844)
+        Viscous  : (-0.282317 0.0001881104 -0.01404308)
+    Sum of moments
+        Total    : (0.6071074 -0.004837812 -0.02785208)
+        Pressure : (0.6071949 0.004125 -0.02731599)
+        Viscous  : (-8.743475e-05 -0.008962811 -0.000536088)
+    writing force and moment files.
+
+Time = 45
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002214118, Final residual = 7.788508e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0020138, Final residual = 5.759583e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001038271, Final residual = 4.393018e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.00316238, Final residual = 2.183437e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.002415084, Final residual = 1.224189e-05, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002026388, Final residual = 1.534817e-06, No Iterations 4
+time step continuity errors : sum local = 1.205161e-05, global = 3.74015e-07, cumulative = 0.0148134
+ExecutionTime = 8.712 s  ClockTime = 8 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-18.9986 -0.1895573 58.84458)
+        Pressure : (-18.71629 -0.1897393 58.85859)
+        Viscous  : (-0.2823123 0.000182024 -0.01401792)
+    Sum of moments
+        Total    : (0.6058561 0.06183591 -0.02823951)
+        Pressure : (0.6059465 0.07080869 -0.0277028)
+        Viscous  : (-9.045491e-05 -0.008972772 -0.0005367164)
+    writing force and moment files.
+
+Time = 46
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001918999, Final residual = 7.422869e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001751099, Final residual = 5.185758e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0009150592, Final residual = 3.786184e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.002745387, Final residual = 1.89862e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.002130904, Final residual = 1.905981e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000178329, Final residual = 1.774824e-06, No Iterations 4
+time step continuity errors : sum local = 1.394005e-05, global = 9.976267e-07, cumulative = 0.0148144
+ExecutionTime = 8.901 s  ClockTime = 9 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0007 -0.1906267 58.90704)
+        Pressure : (-18.71842 -0.1908097 58.92108)
+        Viscous  : (-0.282281 0.0001830737 -0.01403521)
+    Sum of moments
+        Total    : (0.6049229 0.1127362 -0.02849735)
+        Pressure : (0.6050126 0.1217033 -0.02795753)
+        Viscous  : (-8.969918e-05 -0.008967156 -0.0005398108)
+    writing force and moment files.
+
+Time = 47
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001678385, Final residual = 6.358032e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001522043, Final residual = 4.056675e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0007963972, Final residual = 3.48325e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.002392515, Final residual = 1.66833e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001938674, Final residual = 1.057953e-05, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001737494, Final residual = 1.388039e-06, No Iterations 4
+time step continuity errors : sum local = 1.090308e-05, global = 4.841081e-07, cumulative = 0.01481489
+ExecutionTime = 9.087 s  ClockTime = 9 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.00872 -0.1944265 59.00465)
+        Pressure : (-18.72646 -0.1946049 59.01867)
+        Viscous  : (-0.2822593 0.0001784188 -0.01401049)
+    Sum of moments
+        Total    : (0.6093311 0.1675799 -0.02686475)
+        Pressure : (0.6094232 0.1765725 -0.02631603)
+        Viscous  : (-9.20989e-05 -0.008992617 -0.0005487234)
+    writing force and moment files.
+
+Time = 48
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001469029, Final residual = 7.268177e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001334742, Final residual = 4.015116e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0007122573, Final residual = 2.991286e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.002092191, Final residual = 1.466661e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001853557, Final residual = 1.786088e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0001966058, Final residual = 1.735275e-06, No Iterations 4
+time step continuity errors : sum local = 1.363816e-05, global = 1.131057e-06, cumulative = 0.01481602
+ExecutionTime = 9.268 s  ClockTime = 9 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.01019 -0.1925554 59.05571)
+        Pressure : (-18.72809 -0.1927118 59.06971)
+        Viscous  : (-0.282102 0.000156396 -0.01400136)
+    Sum of moments
+        Total    : (0.6025282 0.2045759 -0.02951026)
+        Pressure : (0.6026129 0.2136128 -0.02890298)
+        Viscous  : (-8.474065e-05 -0.009036943 -0.0006072719)
+    writing force and moment files.
+
+Time = 49
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001321541, Final residual = 8.15779e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001218872, Final residual = 3.639068e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0006403216, Final residual = 9.232967e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.001848163, Final residual = 1.278508e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001559681, Final residual = 8.488991e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001418762, Final residual = 1.154351e-06, No Iterations 4
+time step continuity errors : sum local = 9.06692e-06, global = 5.76939e-07, cumulative = 0.01481659
+ExecutionTime = 9.463 s  ClockTime = 9 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.01301 -0.1915886 59.11982)
+        Pressure : (-18.73079 -0.1917865 59.13386)
+        Viscous  : (-0.2822176 0.0001979747 -0.01403635)
+    Sum of moments
+        Total    : (0.605371 0.246211 -0.03002553)
+        Pressure : (0.6054658 0.2552151 -0.02945959)
+        Viscous  : (-9.478228e-05 -0.009004144 -0.0005659422)
+    writing force and moment files.
+
+Time = 50
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001127035, Final residual = 1.137572e-06, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001021897, Final residual = 3.047026e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0005467452, Final residual = 2.134506e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.001595054, Final residual = 1.217991e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.00139993, Final residual = 7.068322e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001326243, Final residual = 1.032337e-06, No Iterations 4
+time step continuity errors : sum local = 8.111404e-06, global = 5.785085e-07, cumulative = 0.01481717
+ExecutionTime = 9.655 s  ClockTime = 9 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.01496 -0.1892239 59.16551)
+        Pressure : (-18.73272 -0.1894331 59.17954)
+        Viscous  : (-0.2822444 0.0002092346 -0.01403824)
+    Sum of moments
+        Total    : (0.606981 0.2746768 -0.02973925)
+        Pressure : (0.607066 0.2836534 -0.02919648)
+        Viscous  : (-8.499936e-05 -0.00897667 -0.000542769)
+    writing force and moment files.
+
+Time = 51
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0009878459, Final residual = 5.422779e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0008887183, Final residual = 2.595012e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0004812552, Final residual = 2.985827e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.00138684, Final residual = 1.02667e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.00127859, Final residual = 7.429928e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001192198, Final residual = 1.107927e-06, No Iterations 4
+time step continuity errors : sum local = 8.705883e-06, global = 3.853102e-07, cumulative = 0.01481756
+ExecutionTime = 9.85 s  ClockTime = 10 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.01868 -0.1895864 59.21376)
+        Pressure : (-18.73642 -0.1897735 59.22778)
+        Viscous  : (-0.2822554 0.0001870193 -0.01401698)
+    Sum of moments
+        Total    : (0.6067393 0.3101118 -0.03021786)
+        Pressure : (0.6068263 0.319109 -0.02966544)
+        Viscous  : (-8.698796e-05 -0.008997225 -0.0005524213)
+    writing force and moment files.
+
+Time = 52
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0008814805, Final residual = 1.261634e-06, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0007838281, Final residual = 2.564117e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0004315293, Final residual = 1.813614e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.001210416, Final residual = 9.835721e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001107972, Final residual = 6.332302e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001144691, Final residual = 1.007014e-06, No Iterations 4
+time step continuity errors : sum local = 7.912631e-06, global = 3.324531e-07, cumulative = 0.01481789
+ExecutionTime = 10.042 s  ClockTime = 10 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02144 -0.190181 59.25225)
+        Pressure : (-18.73922 -0.190385 59.26627)
+        Viscous  : (-0.2822232 0.0002039544 -0.01401937)
+    Sum of moments
+        Total    : (0.6075976 0.3288246 -0.02969785)
+        Pressure : (0.607678 0.3378184 -0.02914385)
+        Viscous  : (-8.037235e-05 -0.008993859 -0.0005540026)
+    writing force and moment files.
+
+Time = 53
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0007874433, Final residual = 6.629577e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0006971957, Final residual = 2.087069e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0003904945, Final residual = 1.94606e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.001068471, Final residual = 8.664297e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001107926, Final residual = 6.55421e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00012136, Final residual = 1.016178e-06, No Iterations 4
+time step continuity errors : sum local = 7.988514e-06, global = 2.729352e-07, cumulative = 0.01481816
+ExecutionTime = 10.227 s  ClockTime = 10 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02592 -0.1896629 59.28687)
+        Pressure : (-18.74378 -0.1898256 59.30085)
+        Viscous  : (-0.2821451 0.0001626972 -0.01398104)
+    Sum of moments
+        Total    : (0.6056598 0.3533153 -0.03083218)
+        Pressure : (0.6057383 0.3623524 -0.03023561)
+        Viscous  : (-7.849953e-05 -0.009037134 -0.0005965729)
+    writing force and moment files.
+
+Time = 54
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0007110002, Final residual = 4.774027e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0006285817, Final residual = 1.70764e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0003465398, Final residual = 1.361918e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0009467906, Final residual = 8.687445e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001039764, Final residual = 4.945937e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001045439, Final residual = 7.130388e-07, No Iterations 4
+time step continuity errors : sum local = 5.60374e-06, global = 8.659507e-07, cumulative = 0.01481903
+ExecutionTime = 10.427 s  ClockTime = 10 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.01716 -0.1886759 59.29091)
+        Pressure : (-18.73497 -0.1888856 59.30493)
+        Viscous  : (-0.2821928 0.0002096717 -0.01401944)
+    Sum of moments
+        Total    : (0.6080389 0.3668207 -0.02911697)
+        Pressure : (0.6081307 0.37581 -0.02856745)
+        Viscous  : (-9.179525e-05 -0.008989328 -0.0005495225)
+    writing force and moment files.
+
+Time = 55
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0006653673, Final residual = 7.460442e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0005636807, Final residual = 2.368665e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0003265856, Final residual = 1.315691e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0008399955, Final residual = 8.391787e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.000967992, Final residual = 7.625073e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001140553, Final residual = 5.799789e-07, No Iterations 5
+time step continuity errors : sum local = 4.559018e-06, global = -2.13215e-08, cumulative = 0.01481901
+ExecutionTime = 10.625 s  ClockTime = 10 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03144 -0.1854276 59.34996)
+        Pressure : (-18.74914 -0.185647 59.36404)
+        Viscous  : (-0.2822967 0.0002194454 -0.01407506)
+    Sum of moments
+        Total    : (0.602163 0.3915894 -0.03159026)
+        Pressure : (0.602246 0.4005778 -0.0310485)
+        Viscous  : (-8.296678e-05 -0.008988431 -0.0005417586)
+    writing force and moment files.
+
+Time = 56
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0005801592, Final residual = 3.233627e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0005280813, Final residual = 5.663428e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000295723, Final residual = 1.273727e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0007334113, Final residual = 2.135967e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0008935996, Final residual = 4.637685e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001046429, Final residual = 7.137711e-07, No Iterations 4
+time step continuity errors : sum local = 5.609052e-06, global = 3.507896e-07, cumulative = 0.01481936
+ExecutionTime = 10.815 s  ClockTime = 11 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02092 -0.1869092 59.33844)
+        Pressure : (-18.73868 -0.1871054 59.35244)
+        Viscous  : (-0.282248 0.0001962318 -0.0140023)
+    Sum of moments
+        Total    : (0.6029928 0.3982724 -0.03042137)
+        Pressure : (0.6030867 0.4072568 -0.0298827)
+        Viscous  : (-9.387714e-05 -0.008984435 -0.0005386675)
+    writing force and moment files.
+
+Time = 57
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0005557062, Final residual = 7.098853e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0004928906, Final residual = 1.545004e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002850158, Final residual = 1.337379e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.000654615, Final residual = 2.504583e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000890292, Final residual = 6.755211e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001092607, Final residual = 5.597412e-07, No Iterations 5
+time step continuity errors : sum local = 4.400775e-06, global = -8.08695e-08, cumulative = 0.01481928
+ExecutionTime = 11.011 s  ClockTime = 11 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03656 -0.1889378 59.38724)
+        Pressure : (-18.75426 -0.1891475 59.40131)
+        Viscous  : (-0.282301 0.0002097396 -0.01406982)
+    Sum of moments
+        Total    : (0.6082124 0.4136641 -0.02874152)
+        Pressure : (0.6083032 0.4226455 -0.02820519)
+        Viscous  : (-9.084475e-05 -0.008981382 -0.0005363245)
+    writing force and moment files.
+
+Time = 58
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004971148, Final residual = 2.391584e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0004505428, Final residual = 5.849251e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002532931, Final residual = 1.095969e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0005820763, Final residual = 1.910881e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001126736, Final residual = 5.631494e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001199401, Final residual = 9.500557e-07, No Iterations 4
+time step continuity errors : sum local = 7.47283e-06, global = 4.293938e-07, cumulative = 0.01481971
+ExecutionTime = 11.202 s  ClockTime = 11 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02677 -0.1917522 59.37754)
+        Pressure : (-18.74457 -0.1919353 59.39149)
+        Viscous  : (-0.2822053 0.0001831605 -0.01395361)
+    Sum of moments
+        Total    : (0.6038393 0.417678 -0.02788609)
+        Pressure : (0.6039428 0.4266435 -0.02736079)
+        Viscous  : (-0.0001034982 -0.008965447 -0.0005253066)
+    writing force and moment files.
+
+Time = 59
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004776301, Final residual = 6.428247e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0004192954, Final residual = 1.44832e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00026035, Final residual = 5.663675e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0005415143, Final residual = 2.082981e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0008626403, Final residual = 6.776484e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001114095, Final residual = 1.110262e-06, No Iterations 4
+time step continuity errors : sum local = 8.732128e-06, global = 2.506484e-07, cumulative = 0.01481996
+ExecutionTime = 11.394 s  ClockTime = 11 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03332 -0.1929236 59.39359)
+        Pressure : (-18.75105 -0.1931214 59.40764)
+        Viscous  : (-0.2822641 0.0001977922 -0.01404912)
+    Sum of moments
+        Total    : (0.6036581 0.4372151 -0.02801058)
+        Pressure : (0.6037521 0.4462165 -0.02746275)
+        Viscous  : (-9.391191e-05 -0.00900139 -0.0005478368)
+    writing force and moment files.
+
+Time = 60
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004786447, Final residual = 3.344706e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0004257348, Final residual = 1.964292e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002524417, Final residual = 1.515012e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0005041952, Final residual = 2.230273e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000807059, Final residual = 6.635375e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001269893, Final residual = 1.076865e-06, No Iterations 4
+time step continuity errors : sum local = 8.466557e-06, global = 6.221711e-08, cumulative = 0.01482002
+ExecutionTime = 11.589 s  ClockTime = 11 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03444 -0.1967108 59.42635)
+        Pressure : (-18.75225 -0.196894 59.44031)
+        Viscous  : (-0.2821875 0.0001831463 -0.0139628)
+    Sum of moments
+        Total    : (0.5956662 0.4386428 -0.030743)
+        Pressure : (0.5957619 0.4476575 -0.03017709)
+        Viscous  : (-9.566914e-05 -0.009014665 -0.0005659154)
+    writing force and moment files.
+
+Time = 61
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004545626, Final residual = 3.814676e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0004072365, Final residual = 1.569866e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002608964, Final residual = 1.492443e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0004861539, Final residual = 1.95856e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0009877208, Final residual = 5.946198e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001387088, Final residual = 9.659098e-07, No Iterations 4
+time step continuity errors : sum local = 7.601481e-06, global = 3.85968e-07, cumulative = 0.01482041
+ExecutionTime = 11.785 s  ClockTime = 12 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04112 -0.1934784 59.43849)
+        Pressure : (-18.75902 -0.1936846 59.45255)
+        Viscous  : (-0.2820955 0.0002061355 -0.01405478)
+    Sum of moments
+        Total    : (0.5983834 0.4462729 -0.03093935)
+        Pressure : (0.5984721 0.4553348 -0.03031869)
+        Viscous  : (-8.869608e-05 -0.009061896 -0.0006206607)
+    writing force and moment files.
+
+Time = 62
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004205023, Final residual = 1.721451e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003810411, Final residual = 1.167907e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002089983, Final residual = 9.232969e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0004263111, Final residual = 1.652709e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0009446713, Final residual = 5.387935e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001186058, Final residual = 9.956734e-07, No Iterations 4
+time step continuity errors : sum local = 7.830803e-06, global = 9.30799e-07, cumulative = 0.01482134
+ExecutionTime = 11.973 s  ClockTime = 12 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02866 -0.1896948 59.4206)
+        Pressure : (-18.74652 -0.1898955 59.43457)
+        Viscous  : (-0.2821419 0.0002007089 -0.01397776)
+    Sum of moments
+        Total    : (0.5940393 0.4457498 -0.03279831)
+        Pressure : (0.594136 0.4547543 -0.03223168)
+        Viscous  : (-9.673373e-05 -0.009004535 -0.0005666287)
+    writing force and moment files.
+
+Time = 63
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000415861, Final residual = 2.640931e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003801285, Final residual = 1.558307e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002459577, Final residual = 4.746393e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0004208062, Final residual = 1.981029e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007190149, Final residual = 6.663127e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001050969, Final residual = 5.336537e-07, No Iterations 5
+time step continuity errors : sum local = 4.197014e-06, global = -1.41308e-07, cumulative = 0.0148212
+ExecutionTime = 12.168 s  ClockTime = 12 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04407 -0.1904676 59.46134)
+        Pressure : (-18.76184 -0.1906659 59.47537)
+        Viscous  : (-0.2822327 0.0001983312 -0.01403772)
+    Sum of moments
+        Total    : (0.6050434 0.4600558 -0.03201673)
+        Pressure : (0.6051212 0.4690793 -0.03144413)
+        Viscous  : (-7.779265e-05 -0.009023483 -0.0005725965)
+    writing force and moment files.
+
+Time = 64
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003570339, Final residual = 1.671248e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.000310112, Final residual = 1.157292e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001842148, Final residual = 5.670842e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0003541286, Final residual = 1.651544e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007825326, Final residual = 7.055905e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001081069, Final residual = 7.024818e-07, No Iterations 5
+time step continuity errors : sum local = 5.524655e-06, global = 2.275691e-07, cumulative = 0.01482142
+ExecutionTime = 12.358 s  ClockTime = 12 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02961 -0.1915661 59.42812)
+        Pressure : (-18.74747 -0.1917649 59.44206)
+        Viscous  : (-0.2821456 0.0001988048 -0.01394578)
+    Sum of moments
+        Total    : (0.6184278 0.4579853 -0.02605424)
+        Pressure : (0.6185226 0.4670123 -0.02549335)
+        Viscous  : (-9.481692e-05 -0.009026995 -0.0005608945)
+    writing force and moment files.
+
+Time = 65
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004043519, Final residual = 3.680434e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003448068, Final residual = 2.03155e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002473487, Final residual = 1.654491e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.00046961, Final residual = 3.346722e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007167273, Final residual = 7.127019e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000109926, Final residual = 5.465786e-07, No Iterations 5
+time step continuity errors : sum local = 4.299081e-06, global = 1.653898e-07, cumulative = 0.01482159
+ExecutionTime = 12.556 s  ClockTime = 12 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04262 -0.1858426 59.46424)
+        Pressure : (-18.76038 -0.1860461 59.47828)
+        Viscous  : (-0.2822407 0.0002034545 -0.01403955)
+    Sum of moments
+        Total    : (0.5869685 0.46486 -0.03571573)
+        Pressure : (0.5870459 0.4738685 -0.03514551)
+        Viscous  : (-7.735044e-05 -0.009008574 -0.0005702251)
+    writing force and moment files.
+
+Time = 66
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003558061, Final residual = 1.695458e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003095871, Final residual = 1.338032e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000196059, Final residual = 1.097372e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0003324065, Final residual = 1.79106e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0009697263, Final residual = 5.746805e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001259573, Final residual = 1.033774e-06, No Iterations 4
+time step continuity errors : sum local = 8.13208e-06, global = 3.209358e-07, cumulative = 0.01482191
+ExecutionTime = 12.75 s  ClockTime = 13 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0401 -0.1871468 59.47755)
+        Pressure : (-18.7579 -0.1873468 59.49151)
+        Viscous  : (-0.282199 0.0002000349 -0.01395993)
+    Sum of moments
+        Total    : (0.5901953 0.4636382 -0.03311365)
+        Pressure : (0.5902848 0.4726076 -0.0325857)
+        Viscous  : (-8.945882e-05 -0.008969375 -0.0005279471)
+    writing force and moment files.
+
+Time = 67
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003419419, Final residual = 2.013942e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003105333, Final residual = 1.372061e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002063612, Final residual = 1.225371e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0003268811, Final residual = 2.137034e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000655745, Final residual = 5.518356e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 9.286538e-05, Final residual = 8.086575e-07, No Iterations 4
+time step continuity errors : sum local = 6.359982e-06, global = 4.229342e-08, cumulative = 0.01482195
+ExecutionTime = 12.942 s  ClockTime = 13 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0494 -0.1872176 59.47821)
+        Pressure : (-18.76711 -0.187428 59.49227)
+        Viscous  : (-0.2822941 0.0002103865 -0.0140676)
+    Sum of moments
+        Total    : (0.5978813 0.4745458 -0.03396961)
+        Pressure : (0.5979595 0.4835428 -0.03342546)
+        Viscous  : (-7.824636e-05 -0.008996961 -0.0005441496)
+    writing force and moment files.
+
+Time = 68
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002843739, Final residual = 1.355385e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002588845, Final residual = 8.868096e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001515065, Final residual = 9.245684e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002681677, Final residual = 1.457849e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000648711, Final residual = 5.464009e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 9.699335e-05, Final residual = 5.030004e-07, No Iterations 5
+time step continuity errors : sum local = 3.954441e-06, global = 2.777608e-07, cumulative = 0.01482223
+ExecutionTime = 13.136 s  ClockTime = 13 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03685 -0.1891127 59.4436)
+        Pressure : (-18.75462 -0.1893082 59.45759)
+        Viscous  : (-0.2822311 0.0001955287 -0.01398603)
+    Sum of moments
+        Total    : (0.6028892 0.4713262 -0.03272185)
+        Pressure : (0.6029769 0.4803197 -0.03218218)
+        Viscous  : (-8.771533e-05 -0.008993502 -0.0005396734)
+    writing force and moment files.
+
+Time = 69
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003122209, Final residual = 1.885474e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002819, Final residual = 1.215332e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001873832, Final residual = 3.434393e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002763907, Final residual = 1.319692e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0008094002, Final residual = 4.312857e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.0001154197, Final residual = 5.756097e-07, No Iterations 5
+time step continuity errors : sum local = 4.530185e-06, global = 6.473995e-08, cumulative = 0.01482229
+ExecutionTime = 13.332 s  ClockTime = 13 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04414 -0.1932233 59.46596)
+        Pressure : (-18.76187 -0.193436 59.48002)
+        Viscous  : (-0.2822714 0.0002127543 -0.01406088)
+    Sum of moments
+        Total    : (0.6210859 0.4778018 -0.02585088)
+        Pressure : (0.6211803 0.4867939 -0.02532799)
+        Viscous  : (-9.442663e-05 -0.008992085 -0.000522887)
+    writing force and moment files.
+
+Time = 70
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003662497, Final residual = 2.681332e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003226598, Final residual = 1.997292e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002161662, Final residual = 1.525127e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0004115206, Final residual = 3.366094e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006894589, Final residual = 3.422823e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.000106616, Final residual = 7.149019e-07, No Iterations 4
+time step continuity errors : sum local = 5.621556e-06, global = 3.283106e-07, cumulative = 0.01482262
+ExecutionTime = 13.532 s  ClockTime = 13 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04344 -0.1932084 59.47823)
+        Pressure : (-18.76123 -0.1933993 59.49221)
+        Viscous  : (-0.2822127 0.0001909312 -0.01398185)
+    Sum of moments
+        Total    : (0.5914576 0.4747381 -0.03157713)
+        Pressure : (0.5915498 0.4837301 -0.03103639)
+        Viscous  : (-9.216126e-05 -0.00899205 -0.0005407458)
+    writing force and moment files.
+
+Time = 71
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002944992, Final residual = 1.465977e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.000250873, Final residual = 4.053025e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000177202, Final residual = 2.766288e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002640257, Final residual = 1.283382e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006584214, Final residual = 5.194114e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 9.62274e-05, Final residual = 9.236838e-07, No Iterations 4
+time step continuity errors : sum local = 7.267175e-06, global = 4.160866e-07, cumulative = 0.01482304
+ExecutionTime = 13.735 s  ClockTime = 14 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04838 -0.1934916 59.48804)
+        Pressure : (-18.76614 -0.1936783 59.50209)
+        Viscous  : (-0.2822415 0.0001866434 -0.01405834)
+    Sum of moments
+        Total    : (0.581643 0.483475 -0.03445488)
+        Pressure : (0.5817207 0.4924882 -0.03389244)
+        Viscous  : (-7.76278e-05 -0.009013227 -0.0005624319)
+    writing force and moment files.
+
+Time = 72
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002972712, Final residual = 1.486383e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002650407, Final residual = 1.26283e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001667551, Final residual = 5.04382e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002576788, Final residual = 1.190136e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007847641, Final residual = 6.108436e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001427463, Final residual = 8.607939e-07, No Iterations 4
+time step continuity errors : sum local = 6.773044e-06, global = 2.103718e-07, cumulative = 0.01482325
+ExecutionTime = 13.933 s  ClockTime = 14 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04232 -0.1962375 59.47763)
+        Pressure : (-18.76023 -0.1964014 59.49159)
+        Viscous  : (-0.282088 0.0001639164 -0.0139544)
+    Sum of moments
+        Total    : (0.6013107 0.4772705 -0.03249206)
+        Pressure : (0.6013977 0.4863205 -0.03189676)
+        Viscous  : (-8.696965e-05 -0.00905001 -0.0005953012)
+    writing force and moment files.
+
+Time = 73
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003329332, Final residual = 1.373983e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002999199, Final residual = 2.448749e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001867848, Final residual = 9.282514e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002787508, Final residual = 1.369445e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006181956, Final residual = 4.456837e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.45358e-05, Final residual = 6.21104e-07, No Iterations 4
+time step continuity errors : sum local = 4.885593e-06, global = 5.604039e-07, cumulative = 0.01482381
+ExecutionTime = 14.121 s  ClockTime = 14 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04666 -0.1947977 59.4766)
+        Pressure : (-18.76446 -0.1950072 59.49067)
+        Viscous  : (-0.2821982 0.0002095047 -0.01407472)
+    Sum of moments
+        Total    : (0.6069555 0.4809275 -0.03307352)
+        Pressure : (0.6070421 0.4899504 -0.03249944)
+        Viscous  : (-8.657808e-05 -0.009022887 -0.0005740824)
+    writing force and moment files.
+
+Time = 74
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002556216, Final residual = 1.087829e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002221573, Final residual = 7.822469e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000134058, Final residual = 3.175347e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002221203, Final residual = 8.229197e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0008652137, Final residual = 6.142437e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001116043, Final residual = 6.97225e-07, No Iterations 5
+time step continuity errors : sum local = 5.487466e-06, global = 3.919292e-07, cumulative = 0.0148242
+ExecutionTime = 14.324 s  ClockTime = 14 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02941 -0.1926638 59.44613)
+        Pressure : (-18.74729 -0.1928527 59.46008)
+        Viscous  : (-0.2821182 0.0001889022 -0.01394666)
+    Sum of moments
+        Total    : (0.6094892 0.4778647 -0.03031077)
+        Pressure : (0.6095741 0.4868703 -0.02976218)
+        Viscous  : (-8.494863e-05 -0.009005633 -0.0005485866)
+    writing force and moment files.
+
+Time = 75
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003353353, Final residual = 1.924612e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002850675, Final residual = 1.38745e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002025141, Final residual = 1.138455e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002517884, Final residual = 1.285192e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000623455, Final residual = 3.636864e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.0001029816, Final residual = 9.124874e-07, No Iterations 4
+time step continuity errors : sum local = 7.176956e-06, global = -1.742817e-07, cumulative = 0.01482403
+ExecutionTime = 14.524 s  ClockTime = 14 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0475 -0.1901022 59.50256)
+        Pressure : (-18.76528 -0.1903148 59.51663)
+        Viscous  : (-0.282227 0.0002126288 -0.01406709)
+    Sum of moments
+        Total    : (0.602101 0.4889731 -0.03370218)
+        Pressure : (0.6021798 0.4979956 -0.03313616)
+        Viscous  : (-7.88135e-05 -0.009022502 -0.0005660255)
+    writing force and moment files.
+
+Time = 76
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002759094, Final residual = 1.243144e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002276618, Final residual = 9.841206e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000154981, Final residual = 4.470334e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002272468, Final residual = 9.552656e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005911478, Final residual = 5.221515e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.73827e-05, Final residual = 9.182466e-07, No Iterations 4
+time step continuity errors : sum local = 7.220868e-06, global = 2.387848e-07, cumulative = 0.01482427
+ExecutionTime = 14.72 s  ClockTime = 14 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03615 -0.1890791 59.47477)
+        Pressure : (-18.75396 -0.1892826 59.48875)
+        Viscous  : (-0.2821909 0.0002034368 -0.01398139)
+    Sum of moments
+        Total    : (0.6063055 0.4830579 -0.03050724)
+        Pressure : (0.6063897 0.4920664 -0.02995945)
+        Viscous  : (-8.416024e-05 -0.00900849 -0.0005477927)
+    writing force and moment files.
+
+Time = 77
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002538882, Final residual = 1.267407e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001979482, Final residual = 7.766825e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001442124, Final residual = 1.283663e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001939292, Final residual = 8.795308e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005940324, Final residual = 4.503312e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.566089e-05, Final residual = 7.668987e-07, No Iterations 4
+time step continuity errors : sum local = 6.033094e-06, global = 2.764004e-07, cumulative = 0.01482454
+ExecutionTime = 14.916 s  ClockTime = 15 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0428 -0.187086 59.48071)
+        Pressure : (-18.76056 -0.1872855 59.49475)
+        Viscous  : (-0.2822369 0.0001994476 -0.01403295)
+    Sum of moments
+        Total    : (0.5954509 0.4854859 -0.03489992)
+        Pressure : (0.5955235 0.4944946 -0.03433679)
+        Viscous  : (-7.261392e-05 -0.009008682 -0.0005631279)
+    writing force and moment files.
+
+Time = 78
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002526026, Final residual = 1.178368e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002066258, Final residual = 9.971469e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001393747, Final residual = 1.347982e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001933264, Final residual = 8.878436e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000906343, Final residual = 5.028647e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001066944, Final residual = 9.303146e-07, No Iterations 4
+time step continuity errors : sum local = 7.320871e-06, global = 2.570918e-07, cumulative = 0.0148248
+ExecutionTime = 15.105 s  ClockTime = 15 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03766 -0.1896204 59.47929)
+        Pressure : (-18.75552 -0.1898032 59.49324)
+        Viscous  : (-0.2821433 0.0001828066 -0.01394662)
+    Sum of moments
+        Total    : (0.6067348 0.4806329 -0.03172345)
+        Pressure : (0.6068239 0.4896155 -0.03118223)
+        Viscous  : (-8.912257e-05 -0.008982584 -0.0005412153)
+    writing force and moment files.
+
+Time = 79
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002518344, Final residual = 1.290407e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001957342, Final residual = 9.895866e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001454517, Final residual = 2.222062e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002086673, Final residual = 9.905015e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001071712, Final residual = 1.06518e-05, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001323477, Final residual = 1.046339e-06, No Iterations 5
+time step continuity errors : sum local = 8.240321e-06, global = 2.758746e-07, cumulative = 0.01482508
+ExecutionTime = 15.3 s  ClockTime = 15 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03264 -0.1911822 59.45626)
+        Pressure : (-18.75048 -0.1913899 59.47027)
+        Viscous  : (-0.2821622 0.0002076563 -0.01401637)
+    Sum of moments
+        Total    : (0.6298614 0.4917745 -0.02250555)
+        Pressure : (0.6299602 0.5007999 -0.02197842)
+        Viscous  : (-9.882042e-05 -0.009025406 -0.000527129)
+    writing force and moment files.
+
+Time = 80
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0005763114, Final residual = 1.47382e-06, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0004057355, Final residual = 1.051098e-06, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0003398664, Final residual = 3.135272e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.003158636, Final residual = 1.212792e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006474924, Final residual = 4.434526e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.0001190531, Final residual = 9.425475e-07, No Iterations 4
+time step continuity errors : sum local = 7.410614e-06, global = 3.471306e-07, cumulative = 0.01482542
+ExecutionTime = 15.515 s  ClockTime = 15 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.02945 -0.1851899 59.49131)
+        Pressure : (-18.74729 -0.1853795 59.50529)
+        Viscous  : (-0.2821621 0.0001895206 -0.01397753)
+    Sum of moments
+        Total    : (0.576183 0.4889248 -0.03025987)
+        Pressure : (0.5762731 0.4979419 -0.02969545)
+        Viscous  : (-9.013064e-05 -0.009017138 -0.0005644214)
+    writing force and moment files.
+
+Time = 81
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003398586, Final residual = 1.804658e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002993581, Final residual = 2.024686e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0002142048, Final residual = 1.280551e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0006397953, Final residual = 7.642886e-07, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0006344367, Final residual = 4.329603e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.000112372, Final residual = 9.671187e-07, No Iterations 4
+time step continuity errors : sum local = 7.607549e-06, global = -1.441487e-07, cumulative = 0.01482528
+ExecutionTime = 15.722 s  ClockTime = 15 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0482 -0.1846009 59.54715)
+        Pressure : (-18.76595 -0.1848097 59.56119)
+        Viscous  : (-0.2822491 0.0002087536 -0.01404432)
+    Sum of moments
+        Total    : (0.5644545 0.491007 -0.03468482)
+        Pressure : (0.5645381 0.5000175 -0.03412231)
+        Viscous  : (-8.361062e-05 -0.009010545 -0.0005625158)
+    writing force and moment files.
+
+Time = 82
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003120679, Final residual = 1.627751e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002825405, Final residual = 1.5439e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001940401, Final residual = 1.138543e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0004130874, Final residual = 3.413899e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005927345, Final residual = 3.552289e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 9.384067e-05, Final residual = 7.196819e-07, No Iterations 4
+time step continuity errors : sum local = 5.657884e-06, global = 1.546192e-07, cumulative = 0.01482543
+ExecutionTime = 15.949 s  ClockTime = 16 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03919 -0.1873774 59.49364)
+        Pressure : (-18.75699 -0.1875783 59.50763)
+        Viscous  : (-0.2822035 0.0002009381 -0.01399235)
+    Sum of moments
+        Total    : (0.5914768 0.4823372 -0.03142391)
+        Pressure : (0.5915597 0.4913366 -0.03087323)
+        Viscous  : (-8.287858e-05 -0.008999414 -0.0005506822)
+    writing force and moment files.
+
+Time = 83
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002547884, Final residual = 1.353514e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.000217277, Final residual = 1.414025e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001493643, Final residual = 2.555395e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0003291295, Final residual = 2.662864e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006492993, Final residual = 5.969667e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 9.112226e-05, Final residual = 9.303089e-07, No Iterations 4
+time step continuity errors : sum local = 7.318706e-06, global = 1.841634e-07, cumulative = 0.01482562
+ExecutionTime = 16.17 s  ClockTime = 16 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03803 -0.1890186 59.46527)
+        Pressure : (-18.75578 -0.1892259 59.47932)
+        Viscous  : (-0.2822447 0.0002073772 -0.01404952)
+    Sum of moments
+        Total    : (0.6095601 0.4885728 -0.03041997)
+        Pressure : (0.6096354 0.4975829 -0.02986575)
+        Viscous  : (-7.529806e-05 -0.009010046 -0.0005542187)
+    writing force and moment files.
+
+Time = 84
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002587255, Final residual = 1.289949e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002325018, Final residual = 4.181812e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001568849, Final residual = 1.001379e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0003001271, Final residual = 1.827935e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005153411, Final residual = 4.527103e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.587318e-05, Final residual = 6.334942e-07, No Iterations 4
+time step continuity errors : sum local = 4.979578e-06, global = 8.897949e-08, cumulative = 0.01482571
+ExecutionTime = 16.369 s  ClockTime = 16 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03942 -0.191425 59.47437)
+        Pressure : (-18.75722 -0.1916282 59.48838)
+        Viscous  : (-0.2822016 0.0002032317 -0.01400469)
+    Sum of moments
+        Total    : (0.6138247 0.484688 -0.03030243)
+        Pressure : (0.6139036 0.4936952 -0.02974869)
+        Viscous  : (-7.891856e-05 -0.009007219 -0.0005537462)
+    writing force and moment files.
+
+Time = 85
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000250664, Final residual = 1.437131e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002118234, Final residual = 3.349711e-07, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000147533, Final residual = 2.743031e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.000277412, Final residual = 1.197387e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005781491, Final residual = 3.928712e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 7.731081e-05, Final residual = 5.241151e-07, No Iterations 4
+time step continuity errors : sum local = 4.123835e-06, global = 1.991776e-07, cumulative = 0.01482591
+ExecutionTime = 16.566 s  ClockTime = 16 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04334 -0.1917363 59.47709)
+        Pressure : (-18.76115 -0.1919265 59.49111)
+        Viscous  : (-0.282182 0.0001901867 -0.01402028)
+    Sum of moments
+        Total    : (0.6101634 0.489069 -0.03206165)
+        Pressure : (0.6102374 0.4980994 -0.03148174)
+        Viscous  : (-7.396062e-05 -0.009030419 -0.000579911)
+    writing force and moment files.
+
+Time = 86
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002344933, Final residual = 1.031851e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001886046, Final residual = 7.930993e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001224097, Final residual = 7.075722e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002601011, Final residual = 2.506033e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006455221, Final residual = 5.047553e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 9.361188e-05, Final residual = 5.014154e-07, No Iterations 5
+time step continuity errors : sum local = 3.942658e-06, global = 3.810173e-07, cumulative = 0.01482629
+ExecutionTime = 16.763 s  ClockTime = 17 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03197 -0.190357 59.45429)
+        Pressure : (-18.74982 -0.19056 59.46829)
+        Viscous  : (-0.282154 0.0002030188 -0.01400288)
+    Sum of moments
+        Total    : (0.6091175 0.4857603 -0.03085861)
+        Pressure : (0.6092093 0.4947673 -0.03030143)
+        Viscous  : (-9.179664e-05 -0.009006958 -0.000557188)
+    writing force and moment files.
+
+Time = 87
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002881507, Final residual = 1.656096e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002358434, Final residual = 1.203332e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001677473, Final residual = 9.79861e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002672342, Final residual = 9.333846e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005997544, Final residual = 3.226083e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 9.432784e-05, Final residual = 8.018417e-07, No Iterations 4
+time step continuity errors : sum local = 6.307775e-06, global = -2.339145e-07, cumulative = 0.01482605
+ExecutionTime = 16.958 s  ClockTime = 17 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04534 -0.1896324 59.50113)
+        Pressure : (-18.76308 -0.1898514 59.5152)
+        Viscous  : (-0.2822582 0.0002190266 -0.01406292)
+    Sum of moments
+        Total    : (0.6023251 0.4941967 -0.033185)
+        Pressure : (0.6024039 0.5032058 -0.03263334)
+        Viscous  : (-7.880031e-05 -0.009009133 -0.0005516595)
+    writing force and moment files.
+
+Time = 88
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002387474, Final residual = 1.071751e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001967387, Final residual = 9.028772e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001371605, Final residual = 8.015221e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002461568, Final residual = 1.511742e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0004369023, Final residual = 3.803444e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 6.467629e-05, Final residual = 5.016392e-07, No Iterations 4
+time step continuity errors : sum local = 3.942848e-06, global = 1.75795e-07, cumulative = 0.01482623
+ExecutionTime = 17.144 s  ClockTime = 17 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04143 -0.1901143 59.48482)
+        Pressure : (-18.75922 -0.1903106 59.49883)
+        Viscous  : (-0.2822129 0.0001963048 -0.01400928)
+    Sum of moments
+        Total    : (0.6022666 0.4876195 -0.03178382)
+        Pressure : (0.6023506 0.4966246 -0.03123078)
+        Viscous  : (-8.397114e-05 -0.009005056 -0.0005530444)
+    writing force and moment files.
+
+Time = 89
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002005439, Final residual = 1.059883e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001511283, Final residual = 6.881718e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001053922, Final residual = 9.24483e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002046478, Final residual = 1.239773e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006139205, Final residual = 4.271421e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 7.227521e-05, Final residual = 8.215588e-07, No Iterations 4
+time step continuity errors : sum local = 6.465366e-06, global = 3.15172e-07, cumulative = 0.01482654
+ExecutionTime = 17.334 s  ClockTime = 17 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03526 -0.190354 59.46765)
+        Pressure : (-18.75306 -0.1905554 59.48167)
+        Viscous  : (-0.2822036 0.0002013933 -0.01402346)
+    Sum of moments
+        Total    : (0.6035367 0.4893511 -0.03084796)
+        Pressure : (0.603615 0.4983665 -0.03028851)
+        Viscous  : (-7.830674e-05 -0.009015366 -0.0005594484)
+    writing force and moment files.
+
+Time = 90
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002406831, Final residual = 1.246091e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001927495, Final residual = 1.122845e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001312331, Final residual = 7.410655e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002220701, Final residual = 1.311843e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007835286, Final residual = 5.564861e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001229557, Final residual = 1.088974e-06, No Iterations 4
+time step continuity errors : sum local = 8.565599e-06, global = 1.386185e-07, cumulative = 0.01482668
+ExecutionTime = 17.525 s  ClockTime = 17 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04038 -0.1911411 59.49128)
+        Pressure : (-18.7583 -0.1913075 59.50526)
+        Viscous  : (-0.2820761 0.0001663492 -0.01398107)
+    Sum of moments
+        Total    : (0.6018625 0.4845532 -0.03215882)
+        Pressure : (0.6019512 0.4935787 -0.03156794)
+        Viscous  : (-8.873812e-05 -0.009025502 -0.0005908811)
+    writing force and moment files.
+
+Time = 91
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002630346, Final residual = 1.284868e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002151498, Final residual = 9.870252e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001435064, Final residual = 2.345291e-07, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002354004, Final residual = 1.402158e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0005617723, Final residual = 4.13133e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 6.428929e-05, Final residual = 6.054751e-07, No Iterations 4
+time step continuity errors : sum local = 4.762882e-06, global = 2.020116e-07, cumulative = 0.01482688
+ExecutionTime = 17.722 s  ClockTime = 17 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03791 -0.1898939 59.48465)
+        Pressure : (-18.75569 -0.1901061 59.49871)
+        Viscous  : (-0.28222 0.0002122064 -0.01405863)
+    Sum of moments
+        Total    : (0.6035276 0.492975 -0.03169369)
+        Pressure : (0.6036134 0.5019967 -0.03113065)
+        Viscous  : (-8.584536e-05 -0.009021701 -0.0005630444)
+    writing force and moment files.
+
+Time = 92
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002185465, Final residual = 9.58327e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001586982, Final residual = 5.823225e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001086995, Final residual = 5.329511e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.000199501, Final residual = 8.952994e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0004496149, Final residual = 3.693102e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 7.745382e-05, Final residual = 6.728233e-07, No Iterations 4
+time step continuity errors : sum local = 5.288403e-06, global = 5.351533e-07, cumulative = 0.01482742
+ExecutionTime = 17.912 s  ClockTime = 18 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0367 -0.1860062 59.4738)
+        Pressure : (-18.75444 -0.1862188 59.48785)
+        Viscous  : (-0.2822535 0.0002126133 -0.01405466)
+    Sum of moments
+        Total    : (0.598949 0.4884398 -0.03266672)
+        Pressure : (0.5990294 0.4974304 -0.03212036)
+        Viscous  : (-8.041916e-05 -0.008990624 -0.0005463584)
+    writing force and moment files.
+
+Time = 93
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002307032, Final residual = 1.583118e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001997796, Final residual = 1.065178e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.000125411, Final residual = 6.836995e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001935747, Final residual = 1.079186e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006121297, Final residual = 4.474452e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.390287e-05, Final residual = 6.736659e-07, No Iterations 4
+time step continuity errors : sum local = 5.300037e-06, global = -2.40158e-07, cumulative = 0.01482718
+ExecutionTime = 18.092 s  ClockTime = 18 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03772 -0.1895004 59.4877)
+        Pressure : (-18.75545 -0.1897095 59.50174)
+        Viscous  : (-0.2822782 0.0002090815 -0.0140412)
+    Sum of moments
+        Total    : (0.6098428 0.4897915 -0.02981735)
+        Pressure : (0.6099345 0.498786 -0.02927788)
+        Viscous  : (-9.166205e-05 -0.008994499 -0.0005394646)
+    writing force and moment files.
+
+Time = 94
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002275161, Final residual = 1.031418e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.000194978, Final residual = 7.938938e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001245483, Final residual = 6.279239e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001861632, Final residual = 1.30389e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0006440629, Final residual = 4.211696e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.43714e-05, Final residual = 7.760025e-07, No Iterations 4
+time step continuity errors : sum local = 6.102475e-06, global = 3.642365e-07, cumulative = 0.01482754
+ExecutionTime = 18.279 s  ClockTime = 18 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04332 -0.1891536 59.48593)
+        Pressure : (-18.76106 -0.1893565 59.49997)
+        Viscous  : (-0.2822603 0.0002028328 -0.01404765)
+    Sum of moments
+        Total    : (0.6038907 0.4857825 -0.02978592)
+        Pressure : (0.6039815 0.4947478 -0.02925657)
+        Viscous  : (-9.072816e-05 -0.008965271 -0.0005293479)
+    writing force and moment files.
+
+Time = 95
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002149143, Final residual = 1.399041e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001816479, Final residual = 7.315343e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001157164, Final residual = 7.006351e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001752792, Final residual = 1.35396e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007048168, Final residual = 4.890214e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.868685e-05, Final residual = 8.324125e-07, No Iterations 4
+time step continuity errors : sum local = 6.550073e-06, global = 2.349752e-07, cumulative = 0.01482778
+ExecutionTime = 18.464 s  ClockTime = 18 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03244 -0.1916815 59.46959)
+        Pressure : (-18.75019 -0.1918716 59.48359)
+        Viscous  : (-0.2822489 0.000190082 -0.01400234)
+    Sum of moments
+        Total    : (0.6002066 0.4937976 -0.03014493)
+        Pressure : (0.6003006 0.5028068 -0.02959946)
+        Viscous  : (-9.40685e-05 -0.009009141 -0.0005454689)
+    writing force and moment files.
+
+Time = 96
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002648792, Final residual = 1.324487e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.000230302, Final residual = 1.075667e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001598861, Final residual = 8.940759e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001996126, Final residual = 6.976298e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0004554178, Final residual = 2.820985e-06, No Iterations 5
+GAMG:  Solving for p, Initial residual = 8.566421e-05, Final residual = 6.859105e-07, No Iterations 4
+time step continuity errors : sum local = 5.391447e-06, global = 5.069049e-08, cumulative = 0.01482783
+ExecutionTime = 18.66 s  ClockTime = 18 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04828 -0.1937151 59.5003)
+        Pressure : (-18.76602 -0.1939173 59.51436)
+        Viscous  : (-0.2822618 0.0002021654 -0.01406027)
+    Sum of moments
+        Total    : (0.5990021 0.4899086 -0.03073132)
+        Pressure : (0.5990899 0.498904 -0.03017931)
+        Viscous  : (-8.780145e-05 -0.008995361 -0.0005520093)
+    writing force and moment files.
+
+Time = 97
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002426063, Final residual = 1.617393e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0001957257, Final residual = 1.048889e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001260901, Final residual = 7.044589e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0001794287, Final residual = 1.776147e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007058541, Final residual = 4.201587e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 8.452304e-05, Final residual = 5.941634e-07, No Iterations 4
+time step continuity errors : sum local = 4.677312e-06, global = 2.195336e-07, cumulative = 0.01482805
+ExecutionTime = 18.856 s  ClockTime = 19 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03874 -0.1968685 59.48698)
+        Pressure : (-18.75655 -0.1970474 59.50095)
+        Viscous  : (-0.2821908 0.0001789186 -0.01397175)
+    Sum of moments
+        Total    : (0.5981779 0.4897451 -0.03091064)
+        Pressure : (0.5982714 0.4987691 -0.03034347)
+        Viscous  : (-9.344389e-05 -0.009024087 -0.0005671687)
+    writing force and moment files.
+
+Time = 98
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002501278, Final residual = 1.103928e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002045394, Final residual = 7.314991e-07, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001390347, Final residual = 6.498398e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.000198397, Final residual = 8.984152e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001100761, Final residual = 5.736628e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000162204, Final residual = 1.077812e-06, No Iterations 4
+time step continuity errors : sum local = 8.486375e-06, global = 1.084722e-06, cumulative = 0.01482913
+ExecutionTime = 19.041 s  ClockTime = 19 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.03789 -0.1933384 59.47105)
+        Pressure : (-18.75586 -0.193535 59.48506)
+        Viscous  : (-0.2820337 0.0001966046 -0.01401581)
+    Sum of moments
+        Total    : (0.6026931 0.48592 -0.02991003)
+        Pressure : (0.6027917 0.494951 -0.02931282)
+        Viscous  : (-9.855805e-05 -0.009030993 -0.0005972111)
+    writing force and moment files.
+
+Time = 99
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000351453, Final residual = 2.612754e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0003199587, Final residual = 1.735073e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001979064, Final residual = 1.226359e-06, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002586571, Final residual = 1.314313e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0007596076, Final residual = 6.945929e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0001155889, Final residual = 1.09743e-06, No Iterations 4
+time step continuity errors : sum local = 8.634912e-06, global = -1.007803e-07, cumulative = 0.01482903
+ExecutionTime = 19.222 s  ClockTime = 19 s
+
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.0406 -0.1911299 59.51279)
+        Pressure : (-18.75842 -0.1913396 59.52681)
+        Viscous  : (-0.2821753 0.0002096769 -0.01401983)
+    Sum of moments
+        Total    : (0.594321 0.4943949 -0.03351262)
+        Pressure : (0.5944147 0.5034318 -0.03293998)
+        Viscous  : (-9.372604e-05 -0.009036903 -0.0005726392)
+    writing force and moment files.
+
+Time = 100
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002997357, Final residual = 1.344295e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0002674451, Final residual = 1.163985e-06, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0001862664, Final residual = 9.783591e-07, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.0002365911, Final residual = 9.245282e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.000477366, Final residual = 4.500064e-06, No Iterations 4
+GAMG:  Solving for p, Initial residual = 7.971086e-05, Final residual = 6.419804e-07, No Iterations 4
+time step continuity errors : sum local = 5.046819e-06, global = 2.719517e-07, cumulative = 0.0148293
+ExecutionTime = 19.422 s  ClockTime = 19 s
+
+writeObjects writeExtraFields write:
+    automatically written object rho
+forces forceCompositeMonitorOnAutoplane_PlaneInDefault write:
+    Sum of forces
+        Total    : (-19.04517 -0.1892305 59.50252)
+        Pressure : (-18.76297 -0.1894294 59.51655)
+        Viscous  : (-0.2822028 0.0001988675 -0.01402531)
+    Sum of moments
+        Total    : (0.5979429 0.4899363 -0.03103647)
+        Pressure : (0.5980225 0.4989507 -0.03047082)
+        Viscous  : (-7.965204e-05 -0.009014388 -0.0005656408)
+    writing force and moment files.
+
+End
+

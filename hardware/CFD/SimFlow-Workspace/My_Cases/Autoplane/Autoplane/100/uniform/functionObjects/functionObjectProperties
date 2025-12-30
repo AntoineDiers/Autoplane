@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "100/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    forceCompositeMonitorOnAutoplane_PlaneInDefault
+    {
+        vector
+        {
+            pressureForce   ( -18.76297 -0.1894294 59.51655 );
+            viscousForce    ( -0.2822028 0.0001988675 -0.01402531 );
+            internalForce   ( 0 0 0 );
+            pressureMoment  ( 0.5980225 0.4989507 -0.03047082 );
+            viscousMoment   ( -7.965204000000001e-05 -0.009014388 -0.0005656408 );
+            internalMoment  ( 0 0 0 );
+        }
+    }
+}
+
+
+// ************************************************************************* //

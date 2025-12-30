@@ -1,0 +1,33 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	volScalarField;
+	location	"0";
+	object	T;
+	arch	"LSB;label=32;scalar=64";
+}
+dimensions	[0 0 0 1 0 0 0];
+internalField	uniform 300;
+boundaryField
+{
+	boundaries
+	{
+		type	zeroGradient;
+	}
+	inlet
+	{
+		type	totalTemperature;
+		T0	uniform 300;
+		gamma	1.396;
+	}
+	outlet
+	{
+		type	inletOutlet;
+		inletValue	uniform 300;
+	}
+	Autoplane_Plane
+	{
+		type	zeroGradient;
+	}
+}

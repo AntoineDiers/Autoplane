@@ -1,0 +1,69 @@
+FoamFile
+{
+	class	dictionary;
+	format	ascii;
+	location	system;
+	object	controlDict;
+	version	2.0;
+}
+application	rhoSimpleFoam;
+deltaT	1;
+endTime	100;
+purgeWrite	2;
+startFrom	latestTime;
+startTime	0;
+stopAt	endTime;
+timeFormat	general;
+timePrecision	6;
+writeControl	timeStep;
+writeInterval	10;
+writePrecision	7;
+runTimeModifiable	true;
+timeFormat	general;
+timePrecision	6;
+writeCompression	false;
+writeFormat	binary;
+writePrecision	7;
+libs	("libfvMotionSolvers.dll" "libturbulenceModels.dll" "libturbulenceModelSchemes.dll" "libfvOptions.dll");
+functions
+{
+	writeExtraFields
+	{
+		libs	("libutilityFunctionObjects.dll");
+		objects	(rho);
+		type	writeObjects;
+		writeOption	anyWrite;
+		executeInterval	1;
+		enabled	true;
+		log	true;
+		writeControl	writeTime;
+		writeInterval	1;
+	}
+	forceCompositeMonitorOnAutoplane_PlaneInDefault
+	{
+		U	U;
+		composite	true;
+		libs	("libforces.dll");
+		p	p;
+		rho	rho;
+		type	forces;
+		compositeMonitor	true;
+		monitorSeparatePatches	true;
+		CofR	(0 0 0);
+		coefficients	(Cd Cl CmPitch);
+		executeInterval	1;
+		enabled	true;
+		log	true;
+		patches	(Autoplane_Plane);
+		rhoInf	1.0;
+		writeInterval	1;
+	}
+}
+OptimisationSwitches
+{
+	fileHandler	uncollated;
+	fileModificationSkew	0;
+	maxMasterFileBufferSize	1.0E9;
+	maxThreadFileBufferSize	1.0E9;
+	mpiBufferSize	200000000;
+}

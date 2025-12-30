@@ -1,0 +1,79 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	dictionary;
+	location	"system";
+	object	changeDictionaryDict;
+}
+p
+{
+	boundaryField
+	{
+		boundaries
+		{
+			type	zeroGradient;
+		}
+		inlet
+		{
+			type	zeroGradient;
+		}
+		outlet
+		{
+			type	fixedValue;
+			value	uniform 100000;
+		}
+		Autoplane_Plane
+		{
+			type	zeroGradient;
+		}
+	}
+}
+U
+{
+	boundaryField
+	{
+		boundaries
+		{
+			type	noSlip;
+		}
+		inlet
+		{
+			type	surfaceNormalFixedValue;
+			refValue	uniform -14;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		Autoplane_Plane
+		{
+			type	noSlip;
+		}
+	}
+}
+T
+{
+	boundaryField
+	{
+		boundaries
+		{
+			type	zeroGradient;
+		}
+		inlet
+		{
+			type	totalTemperature;
+			T0	uniform 300;
+			gamma	1.396;
+		}
+		outlet
+		{
+			type	inletOutlet;
+			inletValue	uniform 300;
+		}
+		Autoplane_Plane
+		{
+			type	zeroGradient;
+		}
+	}
+}

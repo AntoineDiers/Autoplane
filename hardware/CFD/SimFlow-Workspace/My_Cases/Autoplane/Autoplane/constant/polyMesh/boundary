@@ -1,0 +1,36 @@
+FoamFile
+{
+	version	2.0;
+	format	ascii;
+	class	polyBoundaryMesh;
+	location	"constant/polyMesh";
+	object	boundary;
+	arch	"LSB;label=32;scalar=64";
+}
+4
+(
+	boundaries
+	{
+		type	wall;
+		startFace	307871;
+		nFaces	3000;
+	}
+	inlet
+	{
+		type	patch;
+		startFace	310871;
+		nFaces	800;
+	}
+	outlet
+	{
+		type	patch;
+		startFace	311671;
+		nFaces	935;
+	}
+	Autoplane_Plane
+	{
+		type	wall;
+		startFace	312606;
+		nFaces	7252;
+	}
+)
