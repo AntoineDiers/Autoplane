@@ -1,16 +1,12 @@
-Software
-========================
 
-Architecture
-------------------------
-
-.. image:: architecture.png
+Build process
+================================
 
 Build
 ------------------------
 
 .. note::
-    Before building, please follow the :doc:`../hardware/equipments_configuration/user_pc/index` steps
+    Before building, please follow the :doc:`../../hardware/equipments_configuration/user_pc/index` steps
 
 To build the Autoplane software, simply run the following : 
 
@@ -32,7 +28,7 @@ Deploy
 ------------------------
 
 Deploy Autoplane HMI
-________________________
+_______________________________
 
 .. code-block::
 
@@ -45,7 +41,7 @@ You can then run it with
     autoplane-hmi
 
 Deploy Autoplane Firmware
-________________________
+_______________________________
     
 - Copy the **docker-compose.yaml** file into your raspberry pi
 

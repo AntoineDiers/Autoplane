@@ -5,3 +5,4 @@ Hardware
    :maxdepth: 2
 
    equipments_configuration/index
+   aerodynamics/index

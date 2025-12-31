@@ -1,11 +1,13 @@
 Aerodynamics
 =================
 
+Aerodynamics simulations were made using the free version of `SimFlow <https://sim-flow.com/>`__. The simulation data can be found in the **hardware/CFD** folder.
+
 Constants
 -----------------
 
 - **Weight** : 5kg
-- **Degraded Mode Speed** : 40km/h
+- **Degraded Mode Speed** : 50km/h
 - **Main Wing mounting angle** : 4°
 
 Stability
@@ -19,7 +21,7 @@ To ensure this :
 
 - **Step 1** : Compute **Degraded Mode Pitch** (the pitch angle at whitch lift compensates weight at **Degraded Mode Speed**)
 
-    - Result : -3°
+    - Result : -2.5°
 
 - **Step 2** : Compute the **Stabiliser Mounting Angle** (the stabiliser mounting angle at which My = 0 at **Degraded Mode Pitch** and **Degraded Mode Speed**)
 

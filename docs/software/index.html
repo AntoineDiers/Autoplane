@@ -18,7 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="User PC Configuration" href="../hardware/equipments_configuration/user_pc/index.html" /> 
+    <link rel="next" title="Software architecture" href="architecture/index.html" />
+    <link rel="prev" title="Aerodynamics" href="../hardware/aerodynamics/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,13 +44,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../hardware/index.html">Hardware</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Software</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#build">Build</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#deploy">Deploy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#deploy-autoplane-hmi">Deploy Autoplane HMI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#deploy-autoplane-firmware">Deploy Autoplane Firmware</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="architecture/index.html">Software architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="build_process/index.html">Build process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/index.html">Sphinx documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -80,66 +77,13 @@
              
   <section id="software">
 <h1>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h1>
-<section id="architecture">
-<h2>Architecture<a class="headerlink" href="#architecture" title="Link to this heading"></a></h2>
-<img alt="../_images/architecture.png" src="../_images/architecture.png" />
-</section>
-<section id="build">
-<h2>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Before building, please follow the <a class="reference internal" href="../hardware/equipments_configuration/user_pc/index.html"><span class="doc">User PC Configuration</span></a> steps</p>
-</div>
-<p>To build the Autoplane software, simply run the following :</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">AntoineDiers</span><span class="o">/</span><span class="n">Autoplane</span><span class="o">.</span><span class="n">git</span> <span class="o">--</span><span class="n">recurse</span><span class="o">-</span><span class="n">submodules</span>
-<span class="n">cd</span> <span class="n">Autoplane</span><span class="o">/</span><span class="n">software</span>
-<span class="o">./</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span>
-</pre></div>
-</div>
-<p>This will generate the following :</p>
-<ul class="simple">
-<li><p><strong>deploy/autoplane-hmi_*_amd64.deb</strong> : The installer for the Autoplane HMI</p></li>
-<li><p><strong>deploy/autoplane-run.tar</strong> : A tar file containing the autoplane-run docker image</p></li>
-<li><p><strong>deploy/docker-compose.yaml</strong> : The docker-compose file that will start the docker image on the Autoplane’s Raspberry PI</p></li>
-<li><p>The <strong>autoplane-run</strong> docker image that will run on the Autoplane’s Raspberry PI</p></li>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture/index.html">Software architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_process/index.html">Build process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/index.html">Sphinx documentation</a></li>
 </ul>
-</section>
-<section id="deploy">
-<h2>Deploy<a class="headerlink" href="#deploy" title="Link to this heading"></a></h2>
-<section id="deploy-autoplane-hmi">
-<h3>Deploy Autoplane HMI<a class="headerlink" href="#deploy-autoplane-hmi" title="Link to this heading"></a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">deploy</span><span class="o">/</span><span class="n">autoplane</span><span class="o">-</span><span class="n">hmi_</span><span class="o">*.</span><span class="n">deb</span>
-</pre></div>
 </div>
-<p>You can then run it with</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">autoplane</span><span class="o">-</span><span class="n">hmi</span>
-</pre></div>
-</div>
-</section>
-<section id="deploy-autoplane-firmware">
-<h3>Deploy Autoplane Firmware<a class="headerlink" href="#deploy-autoplane-firmware" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Copy the <strong>docker-compose.yaml</strong> file into your raspberry pi</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scp</span> <span class="n">deploy</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span><span class="o">.</span><span class="n">yaml</span> <span class="n">autoplane</span><span class="nd">@autoplane_wifi</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">autoplane</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Ssh into your raspberry_pi</p></li>
-<li><p>Pull the docker from your local registry</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">pull</span> <span class="n">dev_pc</span><span class="p">:</span><span class="mi">5000</span><span class="o">/</span><span class="n">autoplane</span><span class="o">-</span><span class="n">run</span>
-<span class="n">docker</span> <span class="n">tag</span> <span class="n">dev_pc</span><span class="p">:</span><span class="mi">5000</span><span class="o">/</span><span class="n">autoplane</span><span class="o">-</span><span class="n">run</span> <span class="n">autoplane</span><span class="o">-</span><span class="n">run</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Start the autoplane software</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">&amp;&amp;</span> <span class="n">docker</span> <span class="n">compose</span> <span class="n">down</span> <span class="o">&amp;&amp;</span> <span class="n">docker</span> <span class="n">compose</span> <span class="n">up</span> <span class="o">-</span><span class="n">d</span>
-</pre></div>
-</div>
-</section>
-</section>
 </section>
 
 

@@ -1,0 +1,4 @@
+FROM ubuntu:24.04
+
+COPY assets/install_sphinx.sh /tmp/install_sphinx.sh
+RUN /tmp/install_sphinx.sh
