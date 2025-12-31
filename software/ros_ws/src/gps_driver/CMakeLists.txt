@@ -1,20 +1,18 @@
 cmake_minimum_required(VERSION 3.8)
-project(imu_driver)
+project(gps_driver)
 
-set(CMAKE_BUILD_TYPE "Release" CACHE STRING "" FORCE)
-set(CMAKE_CXX_STANDARD 17)
-
+# find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(autoplane_lib REQUIRED)
 
-# Declare executable
-file(GLOB_RECURSE SOURCES src/*.cpp)
-add_executable(imu_driver ${SOURCES})
-ament_target_dependencies(imu_driver rclcpp std_msgs autoplane_lib)
 
-install(TARGETS imu_driver DESTINATION lib/${PROJECT_NAME})
+file(GLOB_RECURSE SOURCES src/*.cpp)
+add_executable(gps_driver ${SOURCES})
+ament_target_dependencies(gps_driver rclcpp std_msgs autoplane_lib)
+
+install(TARGETS gps_driver DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
   launch

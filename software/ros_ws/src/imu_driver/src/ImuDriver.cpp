@@ -8,7 +8,7 @@ ImuDriver::ImuDriver() : Node("imu_driver")
     std::string serial_port = declare_parameter("serial_port", "/dev/imu");
     uint32_t baudrate = declare_parameter("baudrate", 38400);
 
-    _serial_port = std::make_shared<SerialPort>(this, serial_port, baudrate, [this](const std::vector<uint8_t>& data)
+    _serial_port = std::make_shared<SerialPort>(this, serial_port, baudrate, std::nullopt, [this](const std::vector<uint8_t>& data)
     {
         onSerialData(data);
     });

@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="gps_driver" exec="gps_driver" name="gps_driver" output="screen">
+        <remap from="~/latitude"  to="/pose/latitude"/>
+        <remap from="~/longitude" to="/pose/longitude"/>
+        <remap from="~/altitude"  to="/pose/altitude"/>
+        <remap from="~/heading"   to="/pose/heading"/>
+    </node>
+</launch>

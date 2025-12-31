@@ -1,6 +1,7 @@
 <launch>
 
     <include file="$(find-pkg-share imu_driver)/launch/launch.xml"/>
+    <include file="$(find-pkg-share gps_driver)/launch/launch.xml"/>
     <include file="$(find-pkg-share hmi_bridge)/launch/launch.xml"/>
 
 </launch>

@@ -1,9 +1,10 @@
-#include "SerialPort.h"
+#include <autoplane_lib/SerialPort.h>
 
 #include <sys/eventfd.h>
 #include <sys/poll.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <sys/ioctl.h>
 
 #define BUFFER_SIZE 256
 
@@ -11,11 +12,13 @@ SerialPort::SerialPort(
         const rclcpp::Node* node, 
         const std::filesystem::path& filepath, 
         const uint32_t& baudrate,
+        const std::optional<ControlSignals> control_signals,
         const DataCallback& data_callback)
     {
         _node = node;
         _filepath = filepath;
         _baudrate = baudrate;
+        _control_signals = control_signals;
         _data_callback = data_callback;
         _event_fd = eventfd(0,0);
         if(_event_fd < 0)
@@ -62,14 +65,37 @@ void SerialPort::open()
     RCLCPP_INFO_STREAM(_node->get_logger(), "Opening serial port " << _filepath.string() << " (baudrate = " << _baudrate << ")");
 
     // Open file descriptor
-    _fd = ::open(_filepath.c_str(), O_RDONLY | O_NDELAY);
+    _fd = ::open(_filepath.c_str(), O_RDONLY);
     if(_fd < 0) 
     { 
-        
         RCLCPP_ERROR_STREAM(_node->get_logger(), "Failed to open serial port " << _filepath.string() << " : " << strerror(errno));
         return;
     }
 
+    // Configure control signals
+    if(_control_signals.has_value())
+    {
+        int tiocm_status;
+
+        if(ioctl(_fd,TIOCMGET, &tiocm_status) < 0)
+        {
+            RCLCPP_ERROR_STREAM(_node->get_logger(), "Failed to get serial port tiocm status" << _filepath.string() << " : " << strerror(errno));
+            return;
+        }
+
+        if(_control_signals->dtr) { tiocm_status |= TIOCM_DTR; }
+        else { tiocm_status &= ~TIOCM_DTR; }
+
+        if(_control_signals->rts) { tiocm_status |= TIOCM_RTS; }
+        else { tiocm_status &= ~TIOCM_RTS; }
+
+        if(ioctl(_fd,TIOCMSET, &tiocm_status) < 0)
+        {
+            RCLCPP_ERROR_STREAM(_node->get_logger(), "Failed to set serial port tiocm status" << _filepath.string() << " : " << strerror(errno));
+            return;
+        }
+    }
+    
     // Configure serial port
     struct termios config;
     if(tcgetattr(_fd, &config) != 0) 
@@ -135,6 +161,7 @@ void SerialPort::read()
         return;
     }
 
+    if(fds[0].revents == 0) { return; } // Nothing to receive
 
 
     // Dans tous les autres cas, on essaie de lire
