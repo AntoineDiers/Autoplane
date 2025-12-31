@@ -80,8 +80,12 @@ impl Backend
                     self.last_ping = Some(Instant::now());
                 }
             }
-            Message::ROLL(data) => { self.app_handle.emit("roll", data).unwrap(); },
-            Message::PITCH(data) => { self.app_handle.emit("pitch", data).unwrap(); },
+            Message::ROLL(data) =>      { self.app_handle.emit("roll", data).unwrap(); },
+            Message::PITCH(data) =>     { self.app_handle.emit("pitch", data).unwrap(); },
+            Message::HEADING(data) =>   { self.app_handle.emit("heading", data).unwrap(); },
+            Message::LATITUDE(data) =>  { self.app_handle.emit("latitude", data).unwrap(); },
+            Message::LONGITUDE(data) => { self.app_handle.emit("longitude", data).unwrap(); },
+            Message::ALTITUDE(data) =>  { self.app_handle.emit("altitude", data).unwrap(); },
         }
     }
 

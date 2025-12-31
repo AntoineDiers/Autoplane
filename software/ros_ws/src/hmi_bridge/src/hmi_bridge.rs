@@ -30,6 +30,18 @@ impl HmiBridge
         hmi_bridge.start_transmitting_message::<r2r::std_msgs::msg::Float64>("~/pitch", node, task_pool, Some(Duration::from_millis(100)), 
         |msg| { return Message::PITCH(msg.data); })?;
 
+        hmi_bridge.start_transmitting_message::<r2r::std_msgs::msg::Float64>("~/heading", node, task_pool, Some(Duration::from_millis(100)), 
+        |msg| { return Message::HEADING(msg.data); })?;
+
+        hmi_bridge.start_transmitting_message::<r2r::std_msgs::msg::Float64>("~/latitude", node, task_pool, Some(Duration::from_millis(100)), 
+        |msg| { return Message::LATITUDE(msg.data); })?;
+
+        hmi_bridge.start_transmitting_message::<r2r::std_msgs::msg::Float64>("~/longitude", node, task_pool, Some(Duration::from_millis(100)), 
+        |msg| { return Message::LONGITUDE(msg.data); })?;
+
+        hmi_bridge.start_transmitting_message::<r2r::std_msgs::msg::Float64>("~/altitude", node, task_pool, Some(Duration::from_millis(100)), 
+        |msg| { return Message::ALTITUDE(msg.data); })?;
+
         hmi_bridge.start_udp_listen_thread()?;
 
         Ok(hmi_bridge)

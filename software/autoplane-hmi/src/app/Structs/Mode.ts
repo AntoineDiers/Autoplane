@@ -6,5 +6,3 @@ export enum Mode {
   LANDING = "LANDING",
   EMERGENCY = "EMERGENCY"
 }
-
-export const DefaultMode : Mode = Mode.IDLE;

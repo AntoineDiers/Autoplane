@@ -19,23 +19,23 @@
         <div>
             <div class="nav-data">
                 <div>Speed : {{getSpeedKmh().toFixed(0)}} km/h</div>
-                <div>Altitude : {{position.altitude_m.toFixed(0)}} m</div>
+                <div>Altitude : {{altitude_m.toFixed(0)}} m</div>
             </div>
 
             <div class="attitude">
                 <div class="attitude-field">
-                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+attitude.roll_deg+'deg)'}" src="/assets/icons/attitude/back.png">
-                    <div class="attitude-value">Roll : {{attitude.roll_deg.toFixed(0)}}°</div>
+                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+roll_deg+'deg)'}" src="/assets/icons/attitude/back.png">
+                    <div class="attitude-value">Roll : {{roll_deg.toFixed(0)}}°</div>
                 </div>
 
                 <div class="attitude-field">
-                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+attitude.pitch_deg+'deg)'}" src="/assets/icons/attitude/side.png">
-                    <div class="attitude-value">Pitch : {{attitude.pitch_deg.toFixed(0)}}°</div>
+                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+pitch_deg+'deg)'}" src="/assets/icons/attitude/side.png">
+                    <div class="attitude-value">Pitch : {{pitch_deg.toFixed(0)}}°</div>
                 </div>
 
                 <div class="attitude-field">
-                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+attitude.yaw_deg+'deg)'}" src="/assets/icons/attitude/top.png">
-                    <div class="attitude-value">Yaw : {{attitude.yaw_deg.toFixed(0)}}°</div>
+                    <img class="attitude-icon" [ngStyle]="{'transform': 'rotate('+heading_deg+'deg)'}" src="/assets/icons/attitude/top.png">
+                    <div class="attitude-value">Yaw : {{heading_deg.toFixed(0)}}°</div>
                 </div>
             </div>
         </div>

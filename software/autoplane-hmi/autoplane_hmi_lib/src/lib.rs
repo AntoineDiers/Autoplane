@@ -11,5 +11,9 @@ pub enum Message
 {
     PING(Duration),
     ROLL(f64),
-    PITCH(f64)
+    PITCH(f64),
+    HEADING(f64),
+    LATITUDE(f64),
+    LONGITUDE(f64),
+    ALTITUDE(f64)
 }

@@ -5,9 +5,7 @@ import { ModeState } from './Structs/ModeState';
 import { LeafletModule } from '@bluehalo/ngx-leaflet';
 import * as Leaflet from 'leaflet';
 
-import { Position, DefaultPosition } from './Structs/Position'
-import { Attitude, DefaultAttitude } from './Structs/Attitude';
-import { Mode, DefaultMode } from './Structs/Mode';
+import { Mode } from './Structs/Mode';
 
 import { listen } from '@tauri-apps/api/event';
 
@@ -20,12 +18,20 @@ import { listen } from '@tauri-apps/api/event';
     })
 export class AppComponent implements AfterViewInit {
 
+    // Structs
     Mode = Mode;
     ModeState = ModeState;
 
-    mode :      Mode = DefaultMode;
-    attitude :  Attitude = DefaultAttitude;
-    position :  Position = DefaultPosition;
+    // Autopilot state
+    mode : Mode = Mode.IDLE;
+
+    // Pose
+    roll_deg :      number = 0;
+    pitch_deg :     number = 0;
+    heading_deg :   number = 0;
+    latitude_deg :  number = 0;
+    longitude_deg : number = 0;
+    altitude_m :    number = 0;
 
     ping_ms : number | null = null;
 
@@ -34,44 +40,17 @@ export class AppComponent implements AfterViewInit {
 
     constructor(private changeDetector: ChangeDetectorRef) 
     {
-        listen<number>('roll', (event) => { console.log(event); this.attitude.roll_deg = event.payload; this.changeDetector.detectChanges(); });
-        listen<number>('pitch', (event) => { this.attitude.pitch_deg = event.payload; this.changeDetector.detectChanges(); });
         listen<number|null>('ping', (event) => { this.ping_ms = event.payload; this.changeDetector.detectChanges(); });
 
-        /*
-        setInterval(() => {
-            this.http.get<State>('http://' + window.location.hostname + ':8080/state').subscribe(data => { this.state = data; });
-            if(!this.marker)
-            {
-                this.marker = Leaflet.marker([0,0], 
-                {
-                    icon: Leaflet.divIcon({
-                        className: 'leaflet-marker',
-                        iconSize: [100, 100],
-                        iconAnchor: [50, 50],
-                        html: `<img id="leaflet-marker-image" src="icons/attitude/top.png" width="30" height="30">`
-                    })
-                }).addTo(this.map);
-            }
-            this.marker.setLatLng([this.state.navigation_data.position.latitude_deg, this.state.navigation_data.position.longitude_deg]);
-            this.map.setView([this.state.navigation_data.position.latitude_deg, this.state.navigation_data.position.longitude_deg]);
-            const img = document.getElementById('leaflet-marker-image') as HTMLImageElement;
-            if(img)
-            {
-                img.style.transform = `rotate(${this.state.navigation_data.attitude.yaw_deg}deg)`;
-            }
-        }, 100);
-
-        setInterval(() => {
-            this.connection_state.ping_ms = this.connection_state.connected ? 50 + 20 * (Math.random() - 0.5) : null;
-        }, 1000);
-
-        setInterval(() => {
-            this.connection_state.connected = Math.random() > 0.1 ? true : false;
-        }, 5000);
-
-
-        setInterval(() => { this.updateGamepadInputs(); }, 100);*/
+        listen<number>('roll',      (event) => { this.roll_deg = event.payload;         this.changeDetector.detectChanges(); });
+        listen<number>('pitch',     (event) => { this.pitch_deg = event.payload;        this.changeDetector.detectChanges(); });
+        listen<number>('heading',   (event) => { this.heading_deg = event.payload;      this.changeDetector.detectChanges(); });
+        listen<number>('latitude',  (event) => { this.latitude_deg = event.payload;     this.changeDetector.detectChanges(); });
+        listen<number>('longitude', (event) => { this.longitude_deg = event.payload;    this.changeDetector.detectChanges(); });
+        listen<number>('altitude',  (event) => { this.altitude_m = event.payload;       this.changeDetector.detectChanges(); });
+        
+        // Update plane position on map
+        setInterval(() => { this.updateAutoplaneMarker(); }, 100);
     }
 
     ngAfterViewInit() 
@@ -88,8 +67,29 @@ export class AppComponent implements AfterViewInit {
             center: new Leaflet.LatLng(49.44, 1.09),
             zoomControl: false,
         });
+
+        this.marker = Leaflet.marker([0,0], 
+        {
+            icon: Leaflet.divIcon({
+                className: 'leaflet-marker',
+                iconSize: [50, 50],
+                iconAnchor: [25, 25],
+                html: `<img id="leaflet-marker-image" src="/assets/icons/attitude/top.png" width="50" height="50">`
+            })
+        }).addTo(this.map);
     }
 
+    updateAutoplaneMarker()
+    {
+        if(!this.map || !this.marker) { return; }
+
+        this.marker.setLatLng([this.latitude_deg, this.longitude_deg]);
+        const img = document.getElementById('leaflet-marker-image') as HTMLImageElement;
+        if(img)
+        {
+            img.style.transform = `rotate(${this.heading_deg}deg)`;
+        }
+    }
 
     getSpeedKmh() : number {
         
