@@ -32,4 +32,4 @@ if [[ $1 = "--dev" ]]; then
 else
     CMD="sphinx-build /workspace/docs_src /workspace/docs"
 fi
-docker run -t --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $PWD:/workspace autoplane-build-doc bash -c "$CMD"
+docker run -t --rm -u $(id -u ${USER}):$(id -g ${USER}) --network host -v $PWD:/workspace autoplane-build-doc bash -c "$CMD"
