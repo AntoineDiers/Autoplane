@@ -1,6 +1,5 @@
 <launch>
     <node pkg="hmi_bridge" exec="hmi_bridge" name="hmi_bridge" output="screen">
-        <param name="hmi_ip"        value="192.168.1.2"/>
         <remap from="~/roll"        to="/pose/roll"/>
         <remap from="~/pitch"       to="/pose/pitch"/>
         <remap from="~/heading"     to="/pose/heading"/>

@@ -4,8 +4,7 @@ use std::time::{Duration, Instant};
 use std::{net::UdpSocket, thread::spawn};
 use anyhow::Result;
 
-use autoplane_hmi_lib::{AUTOPLANE_UDP_RCV_PORT, Message};
-use autoplane_hmi_lib::HMI_UDP_RCV_PORT;
+use autoplane_hmi_lib::{AUTOPLANE_IP, AUTOPLANE_UDP_RCV_PORT, HMI_UDP_RCV_PORT, Message};
 use autoplane_hmi_lib::udp_sender::UdpSender;
 use tauri::Emitter;
 
@@ -25,11 +24,12 @@ impl Backend
 {
     pub fn new(app_handle : tauri::AppHandle) -> Result<Arc<Mutex<Backend>>>
     {
+        let udp_dest = AUTOPLANE_IP.to_string() + ":" + AUTOPLANE_UDP_RCV_PORT.to_string().as_str();
         let res = Arc::new(Mutex::new(Backend
         {
             app_handle,
             start_time : Instant::now(),
-            udp_sender : UdpSender::new("192.168.1.10:".to_owned() + AUTOPLANE_UDP_RCV_PORT.to_string().as_str()),
+            udp_sender : UdpSender::new(udp_dest),
             ping_ms : None,
             last_ping : None,
         }));

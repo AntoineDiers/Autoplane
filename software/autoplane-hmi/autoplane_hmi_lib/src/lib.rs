@@ -4,7 +4,9 @@ use std::time::Duration;
 pub mod udp_sender;
 
 pub const HMI_UDP_RCV_PORT : u16 = 8001;
+pub const HMI_IP : &str = "10.0.0.3";
 pub const AUTOPLANE_UDP_RCV_PORT : u16 = 8002; 
+pub const AUTOPLANE_IP : &str = "10.0.0.2";
 
 #[derive(Serialize, Deserialize, Debug)]
 pub enum Message

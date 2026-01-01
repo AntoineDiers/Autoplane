@@ -1,7 +1,7 @@
 use std::{net::UdpSocket, thread::spawn, time::{Duration, Instant}};
 
 use anyhow::Result;
-use autoplane_hmi_lib::{AUTOPLANE_UDP_RCV_PORT, HMI_UDP_RCV_PORT, Message, udp_sender::UdpSender};
+use autoplane_hmi_lib::{AUTOPLANE_UDP_RCV_PORT, HMI_UDP_RCV_PORT, HMI_IP, Message, udp_sender::UdpSender};
 use futures::{StreamExt, executor::LocalPool, future, task::LocalSpawnExt};
 use r2r::{Node, QosProfile, WrappedTypesupport};
 
@@ -16,8 +16,8 @@ impl HmiBridge
 
     pub fn new(node : &mut Node, task_pool : &mut LocalPool) -> Result<HmiBridge>
     {
-        let hmi_ip : String = node.get_parameter("hmi_ip").unwrap();
-        let udp_sender= UdpSender::new(hmi_ip + ":" + &HMI_UDP_RCV_PORT.to_string());
+        let udp_dest = HMI_IP.to_string() + ":" + HMI_UDP_RCV_PORT.to_string().as_str();
+        let udp_sender= UdpSender::new(udp_dest);
         
         let mut hmi_bridge = HmiBridge 
         {

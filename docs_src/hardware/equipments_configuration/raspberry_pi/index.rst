@@ -63,7 +63,16 @@ __________________________
 
 - SSH into your Raspberry Pi using its new static IP address
 
-Install Docker 
+Setup hosts
+__________________________
+
+- Edit the **/etc/hosts** file to add the following line :
+
+.. code-block::
+
+    dev-pc 10.0.0.3
+
+Install and setup Docker 
 __________________________
 
 - Follow this guide to install Docker on your Raspberry Pi : `Install Docker Engine on Ubuntu <https://docs.docker.com/engine/install/ubuntu/>`_
@@ -73,6 +82,14 @@ __________________________
 
     sudo usermod -aG docker $USER
     newgrp docker
+
+- Créer le fichier /etc/docker/daemon.json et y écrire
+
+.. code-block::
+
+    {
+        "insecure-registries" : [ "dev-pc:5000" ]
+    }
 
 Install and setup OpenVPN 
 __________________________
@@ -123,11 +140,7 @@ UDEV rules allows you to chose the name of the file to which a device will be as
     sudo udevadm control --reload-rules
     sudo udevadm trigger
 
-Setup hosts
+Connect to your 4G dongle 
 __________________________
 
-- Edit the **/etc/hosts** file to add the following line :
-
-.. code-block::
-
-    dev_pc 10.0.0.3
+TODO
