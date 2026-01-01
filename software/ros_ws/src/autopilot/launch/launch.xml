@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="autopilot" exec="autopilot" name="autopilot" output="screen">
+        <remap from="~/roll"        to="/pose/roll"/>
+        <remap from="~/pitch"       to="/pose/pitch"/>
+        <remap from="~/heading"     to="/pose/roll"/>
+        <remap from="~/latitude"    to="/pose/roll"/>
+        <remap from="~/longitude"   to="/pose/roll"/>
+        <remap from="~/altitude"    to="/pose/roll"/>
+    </node>
+</launch>
