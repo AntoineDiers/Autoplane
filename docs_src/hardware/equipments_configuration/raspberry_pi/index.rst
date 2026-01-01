@@ -16,6 +16,34 @@ Configuration
 - TODO : install the os
 - TODO : install docker
 
+Install and setup OpenVPN 
+__________________________
+
+- Install OpenVPN Client
+
+.. code-block::
+
+    sudo apt update
+    sudo apt install openvpn
+
+- Setup autostart
+
+Uncomment the following line from **/etc/default/openvpn**
+
+.. code-block::
+
+    AUTOSTART="all"
+
+- Download your .ovpn file from your OpenVpnAS instance on your Dev PC
+- scp it in your Raspberry Pi under **/etc/openvpn/client.conf**
+
+- Enable and start the OpenVPN service
+
+.. code-block::
+
+    sudo systemctl enable openvpn@client.service
+    sudo systemctl start openvpn@client.service
+
 Generate UDEV rules 
 __________________________
 
